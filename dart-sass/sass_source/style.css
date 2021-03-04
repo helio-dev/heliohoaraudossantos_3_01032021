@@ -1,0 +1,22 @@
+body {
+  background-color: yellow;
+  border: solid salmon 2pm;
+  color: red;
+  height: 100px;
+  padding: 2px;
+  -webkit-box-shadow: beige;
+          box-shadow: beige;
+  border-bottom: beige;
+  padding: 10px;
+  width: auto;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.prout .proutprout {
+  border: 10px solid black;
+}
+
+.prout .proutproutprout {
+  border-radius: 10px;
+}
+/*# sourceMappingURL=style.css.map */
