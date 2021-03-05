@@ -9,9 +9,24 @@ body {
   padding: 0;
 }
 
+.banniere {
+  text-align: center;
+}
+
+.banniere .logo {
+  width: 170px;
+}
+
+.info .info__form {
+  background-color: #eaeaea;
+  margin-bottom: 0px;
+  margin: 0px;
+}
+
 .info .info__cat {
   text-align: center;
   background: #f6f6f6;
+  padding: 5px;
 }
 
 .info .info__description {
@@ -20,5 +35,9 @@ body {
 
 .info .info__button {
   background-color: #e16fda;
+}
+
+.info .prout {
+  margin: 0px;
 }
 /*# sourceMappingURL=style.css.map */
