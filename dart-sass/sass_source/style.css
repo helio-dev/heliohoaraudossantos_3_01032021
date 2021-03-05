@@ -8,4 +8,17 @@ body {
   margin: 0;
   padding: 0;
 }
+
+.info .info__cat {
+  text-align: center;
+  background: #f6f6f6;
+}
+
+.info .info__description {
+  color: #959595;
+}
+
+.info .info__button {
+  background-color: #e16fda;
+}
 /*# sourceMappingURL=style.css.map */

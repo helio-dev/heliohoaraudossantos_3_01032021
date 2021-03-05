@@ -9,4 +9,16 @@
 		width: auto;
 		margin: 0;
 		padding: 0;
+    }
+    .info{
+    	.info__cat{
+        	text-align: center;
+			background: #f6f6f6;
+    	}
+		.info__description{
+			color: #959595;
+		}
+		.info__button{
+			background-color: #e16fda;
+		}
 	}
