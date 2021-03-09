@@ -61,6 +61,10 @@ $tertiaire: #99E2D0;
 			border-radius: 40px;
 			box-shadow: 2px 3px 4px 1px #bfb8b8;
 			border: none;
+			$&hover:{
+				opacity: 80%;
+				box-shadow:3px 4px 5px 2px #bdb8b86b
+			}
 		}
 		
 	}
