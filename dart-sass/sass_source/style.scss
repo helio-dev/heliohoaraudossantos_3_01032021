@@ -63,5 +63,32 @@ $tertiaire: #99E2D0;
 		}
 		
 	}
+
+	/* SECTION RESTAURANTS */
+	.restaurants__list{
+		width: 100%;
+		padding: 10px;
+		.restaurant{
+			height: 300px;
+			.restaurant__image{
+				width: 100%;
+			}
+			.restaurant__description{
+				.restaurant__title{
+					color: black;
+					font-weight: bold;
+				}
+				.restaurant__location{
+					color: grey;
+				}
+				.restaurant_info{
+					color: white;
+					background-color: $tertiaire;
+				}
+			}
+		}
+	}
+
+
 }
 
