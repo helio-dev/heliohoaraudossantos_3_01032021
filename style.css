@@ -10,7 +10,7 @@
     text-align: center;
     padding: 19px 0px 8px;
   }
-  .banniere .logo {
+  .banniere .logo__hello {
     width: 170px;
   }
   .info .info__form {
@@ -65,20 +65,23 @@
     width: 100%;
     padding: 10px;
   }
-  .restaurants__list .restaurant {
+  .restaurant {
     height: 300px;
   }
-  .restaurants__list .restaurant .restaurant__image {
-    width: 100%;
+  .restaurant .restaurant__image {
+    padding: 10px;
+    width: 40px;
+    height: 40%;
   }
-  .restaurants__list .restaurant .restaurant__description .restaurant__title {
+  .restaurant .restaurant__description .restaurant__title {
     color: black;
     font-weight: bold;
+    background-color: yellow;
   }
-  .restaurants__list .restaurant .restaurant__description .restaurant__location {
+  .restaurant .restaurant__description .restaurant__location {
     color: grey;
   }
-  .restaurants__list .restaurant .restaurant__description .restaurant_info {
+  .restaurant .restaurant__description .restaurant_info {
     color: white;
     background-color: #99E2D0;
   }
