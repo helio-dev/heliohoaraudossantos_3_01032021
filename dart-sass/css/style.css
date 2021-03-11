@@ -85,5 +85,16 @@
     color: white;
     background-color: #99E2D0;
   }
+  .ctaitem {
+    border: 1px black solid;
+    padding: 10px;
+    border-radius: 20px;
+    margin: 10px;
+    background-color: #f6f6f6;
+  }
+  .ctaitem .ctaitem__number {
+    border-radius: 50%;
+    background-color: #9356DC;
+  }
 }
 /*# sourceMappingURL=style.css.map */
