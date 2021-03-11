@@ -8,7 +8,7 @@ $tertiaire: #99E2D0;
 @media (max-width: 640px){
 			
 	body {
-		width: auto;
+		width: 100%;
 		margin: 0;
 		padding: 0;
     }
@@ -92,16 +92,27 @@ $tertiaire: #99E2D0;
 		}
 
 .ctaitem{
-	border: 1px black solid;
-	padding: 10px;
-	border-radius: 20px;
-	margin: 10px;
-	background-color: #f6f6f6;
-	.ctaitem__number{
-		border-radius: 50%;
-		background-color: $primaire;
-	}
-	.ctaitem__action{
+	
+	margin-bottom: 28px;
+	
+	display: list-item;
+	
+	.ctaitem__contenair{
+		display: flex;
+		align-items: center;
+		background-color: #f6f6f6;
+		padding: 10px;
+		border-radius: 20px;
+		box-shadow: 2px 4px 8px #d8d8d8;
+		.ctaitem__action{
+
+		}
+
+		.fas{
+			margin: 18px 24px 18px 27px;
+			font-size: 22px;
+			color: #8e8e8e;
+		}
 
 	}
 }

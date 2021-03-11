@@ -2,7 +2,7 @@
 /*Taille de police */
 @media (max-width: 640px) {
   body {
-    width: auto;
+    width: 100%;
     margin: 0;
     padding: 0;
   }
@@ -86,15 +86,26 @@
     background-color: #99E2D0;
   }
   .ctaitem {
-    border: 1px black solid;
+    margin-bottom: 28px;
+    display: list-item;
+  }
+  .ctaitem .ctaitem__contenair {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #f6f6f6;
     padding: 10px;
     border-radius: 20px;
-    margin: 10px;
-    background-color: #f6f6f6;
+    -webkit-box-shadow: 2px 4px 8px #d8d8d8;
+            box-shadow: 2px 4px 8px #d8d8d8;
   }
-  .ctaitem .ctaitem__number {
-    border-radius: 50%;
-    background-color: #9356DC;
+  .ctaitem .ctaitem__contenair .fas {
+    margin: 18px 24px 18px 27px;
+    font-size: 22px;
+    color: #8e8e8e;
   }
 }
 /*# sourceMappingURL=style.css.map */
