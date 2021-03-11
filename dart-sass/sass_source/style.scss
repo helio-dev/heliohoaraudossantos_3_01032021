@@ -36,6 +36,11 @@ $texte:'Roboto', sans-serif;
 			.fa-map-marker-alt{
 				margin-right: 10px;
 				}
+			.info__localisation{
+				font-family: $texte;
+				font-size: medium;
+				font-weight: 800;
+			}
 		}
 	
     	.info__cta{
@@ -45,24 +50,29 @@ $texte:'Roboto', sans-serif;
 			padding-right:20px;
 			padding-bottom: 20px;
 			padding-left: 20px;
-			height: 300px;
 			.info__title{
-				margin: 30px 30px 15px 30px;
+				font-family: $texte;
+				font-size: x-large;
+				margin: 17px 30px 15px 30px;
 			}
-    	}
-		.info__description{
-			color: #959595;		
-		}
-		.info__button {
+    		.info__description{
+			color: #959595;	
+			font-family: $texte;	
+			font-size: medium;
+			}
+			.info__button {
+			margin: 12px 0px 34px 0px;
+			font-family: $texte;
 			background:linear-gradient(174deg,$secondaire, $primaire);
 			height: 3em;
 			color: #FFF;
 			border-radius: 40px;
 			box-shadow: 2px 3px 4px 1px #bfb8b8;
 			border: none;
-			&:active {
+				&:active {
 				opacity: 80%;
 				box-shadow:3px 4px 5px 4px #bdb8b86b;
+				}
 			}
 		}
 		
