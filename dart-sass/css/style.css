@@ -1,4 +1,5 @@
 /*Couleurs*/
+/*Fonts*/
 /*Taille de police */
 @media (max-width: 640px) {
   body {
@@ -101,6 +102,16 @@
     border-radius: 20px;
     -webkit-box-shadow: 2px 4px 8px #d8d8d8;
             box-shadow: 2px 4px 8px #d8d8d8;
+  }
+  .ctaitem .ctaitem__contenair:hover {
+    background-color: #f5eef2;
+  }
+  .ctaitem .ctaitem__contenair:active {
+    background-color: #f5eef2;
+  }
+  .ctaitem .ctaitem__contenair:active .fas {
+    background-color: #f5eef2;
+    color: #9356DC;
   }
   .ctaitem .ctaitem__contenair .fas {
     margin: 18px 24px 18px 27px;

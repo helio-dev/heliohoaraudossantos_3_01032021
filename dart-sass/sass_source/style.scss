@@ -2,6 +2,9 @@
 $primaire:#9356DC;
 $secondaire: #FF79DA;
 $tertiaire: #99E2D0;
+/*Fonts*/
+$titre:'Shrikhand', cursive;
+$texte:'Roboto', sans-serif;
 
 
 /*Taille de police */
@@ -11,6 +14,7 @@ $tertiaire: #99E2D0;
 		width: 100%;
 		margin: 0;
 		padding: 0;
+		
     }
 
 	.banniere{
@@ -104,6 +108,16 @@ $tertiaire: #99E2D0;
 		padding: 10px;
 		border-radius: 20px;
 		box-shadow: 2px 4px 8px #d8d8d8;
+		&:hover{
+			background-color: #f5eef2;
+		}
+		&:active{
+			background-color: #f5eef2;
+			.fas{
+				background-color: #f5eef2;
+				color: $primaire;
+			}
+		}
 		.ctaitem__action{
 
 		}
