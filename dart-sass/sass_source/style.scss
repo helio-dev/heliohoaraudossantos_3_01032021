@@ -1,3 +1,5 @@
+/*12mars 8h50 */
+
 /*Couleurs*/
 $primaire:#9356DC;
 $secondaire: #FF79DA;
@@ -16,7 +18,7 @@ $texte:'Roboto', sans-serif;
 		padding: 0;
 		
     }
-
+/* HEADER */
 	.banniere{
 		text-align: center;
 		padding: 19px 0px 8px;
@@ -24,6 +26,11 @@ $texte:'Roboto', sans-serif;
 			width: 170px;
 		}
 	}
+/*HEADER */
+
+/*SECTION */
+/*BLOCCTA */
+	/*ARTICLE INFO */
     .info{			
 		.info__form{
 			color: #353535;
@@ -79,76 +86,84 @@ $texte:'Roboto', sans-serif;
 		}
 		
 	}
+	/*FIN DE L'ARTICLE INFO*/
 
-	/* SECTION RESTAURANTS */
+	/*ARTICLE FONCTIONNEMENT */
+	.ctatitle{
+		font-size: x-large;
+		font-family: $texte;
+		margin: 43px 0px 27px 19px;
+	}
+	.ctaitem{
+		
+		margin-bottom: 28px;
+		
+		display: list-item;
+		
+		.ctaitem__contenair{
+			display: flex;
+			align-items: center;
+			background-color: #f6f6f6;
+			padding: 10px;
+			border-radius: 20px;
+			box-shadow: 2px 4px 8px #d8d8d8;
+			&:hover{
+				background-color: #f5eef2;
+			}
+			&:active{
+				background-color: #f5eef2;
+				.fas{
+					background-color: #f5eef2;
+					color: $primaire;
+				}
+			}
+			.ctaitem__action{
+				font-family: $texte;
+				font-size: medium;
+				font-weight: 700;
+			}
+
+			.fas{
+				margin: 18px 24px 18px 27px;
+				font-size: 22px;
+				color: #8e8e8e;
+			}
+
+		}
+	}
+
+	/*FIN DE l'ARTICLE FONCTIONNEMENT */
+
+	/* SECTION RESTAURANTSLIST */
 	.restaurants__list{
 		width: 100%;
-		padding: 10px;}
-		.restaurant{
-			height: 300px;
-			.restaurant__image{
-				padding: 10px;
-				width: 40px;
-				height: 40%;
-			}
-			.restaurant__description{
-				.restaurant__title{
-					color: black;
-					font-weight: bold;
-					background-color: yellow;
-				}
-				.restaurant__location{
-					color: grey;
-				}
-				.restaurant_info{
-					color: white;
-					background-color: $tertiaire;
-				}
-			}
-		}
-
-.ctatitle{
-	font-size: x-large;
-	font-family: $texte;
-	margin: 43px 0px 27px 19px;
-}
-.ctaitem{
-	
-	margin-bottom: 28px;
-	
-	display: list-item;
-	
-	.ctaitem__contenair{
-		display: flex;
-		align-items: center;
-		background-color: #f6f6f6;
 		padding: 10px;
-		border-radius: 20px;
-		box-shadow: 2px 4px 8px #d8d8d8;
-		&:hover{
-			background-color: #f5eef2;
+	}
+	.restaurant{
+		height: 300px;
+		.restaurant__image{
+			padding: 10px;
+			width: 40px;
+			height: 40%;
 		}
-		&:active{
-			background-color: #f5eef2;
-			.fas{
-				background-color: #f5eef2;
-				color: $primaire;
+		.restaurant__description{
+			.restaurant__title{
+				color: black;
+				font-weight: bold;
+				background-color: yellow;
+			}
+			.restaurant__location{
+				color: grey;
+			}
+			.restaurant_info{
+				color: white;
+				background-color: $tertiaire;
 			}
 		}
-		.ctaitem__action{
-			font-family: $texte;
-			font-size: medium;
-			font-weight: 700;
-		}
-
-		.fas{
-			margin: 18px 24px 18px 27px;
-			font-size: 22px;
-			color: #8e8e8e;
-		}
-
 	}
-}
+/* FIN DE LA SECTION RESTAURANTS LIST */
+
+
 	
 
 
