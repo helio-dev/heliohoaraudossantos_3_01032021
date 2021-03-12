@@ -58,10 +58,12 @@ $texte:'Roboto', sans-serif;
     		.info__description{
 			color: #959595;	
 			font-family: $texte;	
-			font-size: medium;
+			font-size: large;
 			}
 			.info__button {
 			margin: 12px 0px 34px 0px;
+			font-size: large;
+			padding: 12px 30px 16px 30px;
 			font-family: $texte;
 			background:linear-gradient(174deg,$secondaire, $primaire);
 			height: 3em;
@@ -105,6 +107,11 @@ $texte:'Roboto', sans-serif;
 			}
 		}
 
+.ctatitle{
+	font-size: x-large;
+	font-family: $texte;
+	margin: 43px 0px 27px 19px;
+}
 .ctaitem{
 	
 	margin-bottom: 28px;
@@ -129,7 +136,9 @@ $texte:'Roboto', sans-serif;
 			}
 		}
 		.ctaitem__action{
-
+			font-family: $texte;
+			font-size: medium;
+			font-weight: 700;
 		}
 
 		.fas{

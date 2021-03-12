@@ -53,10 +53,12 @@
   .info .info__cta .info__description {
     color: #959595;
     font-family: "Roboto", sans-serif;
-    font-size: medium;
+    font-size: large;
   }
   .info .info__cta .info__button {
     margin: 12px 0px 34px 0px;
+    font-size: large;
+    padding: 12px 30px 16px 30px;
     font-family: "Roboto", sans-serif;
     background: linear-gradient(174deg, #FF79DA, #9356DC);
     height: 3em;
@@ -96,6 +98,11 @@
     color: white;
     background-color: #99E2D0;
   }
+  .ctatitle {
+    font-size: x-large;
+    font-family: "Roboto", sans-serif;
+    margin: 43px 0px 27px 19px;
+  }
   .ctaitem {
     margin-bottom: 28px;
     display: list-item;
@@ -122,6 +129,11 @@
   .ctaitem .ctaitem__contenair:active .fas {
     background-color: #f5eef2;
     color: #9356DC;
+  }
+  .ctaitem .ctaitem__contenair .ctaitem__action {
+    font-family: "Roboto", sans-serif;
+    font-size: medium;
+    font-weight: 700;
   }
   .ctaitem .ctaitem__contenair .fas {
     margin: 18px 24px 18px 27px;
