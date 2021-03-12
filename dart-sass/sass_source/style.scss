@@ -89,7 +89,7 @@ $texte:'Roboto', sans-serif;
 	/*FIN DE L'ARTICLE INFO*/
 
 	/*ARTICLE FONCTIONNEMENT */
-	.ctatitle{
+	.title{
 		font-size: x-large;
 		font-family: $texte;
 		margin: 43px 0px 27px 19px;
@@ -139,6 +139,10 @@ $texte:'Roboto', sans-serif;
 		width: 100%;
 		padding: 10px;
 	}
+	.listtitle{
+		@extend .title;
+	}
+	
 	.restaurant{
 		height: 300px;
 		.restaurant__image{

@@ -86,7 +86,7 @@
   /* info */
   /*FIN DE L'ARTICLE INFO*/
   /*ARTICLE FONCTIONNEMENT */
-  .ctatitle {
+  .title, .listtitle {
     font-size: x-large;
     font-family: "Roboto", sans-serif;
     margin: 43px 0px 27px 19px;
