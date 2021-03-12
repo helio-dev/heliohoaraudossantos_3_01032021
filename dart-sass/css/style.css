@@ -1,3 +1,4 @@
+/*12mars 8h50 */
 /*Couleurs*/
 /*Fonts*/
 /*Taille de police */
@@ -7,12 +8,20 @@
     margin: 0;
     padding: 0;
   }
+  /* HEADER */
   .banniere {
     text-align: center;
     padding: 19px 0px 8px;
   }
   .banniere .logo__hello {
     width: 170px;
+  }
+  /*HEADER */
+  /*SECTION */
+  /*BLOCCTA */
+  /*ARTICLE INFO */
+  .info {
+    /*info cta */
   }
   .info .info__form {
     color: #353535;
@@ -44,6 +53,7 @@
     padding-right: 20px;
     padding-bottom: 20px;
     padding-left: 20px;
+    /*info button */
   }
   .info .info__cta .info__title {
     font-family: "Roboto", sans-serif;
@@ -73,31 +83,9 @@
     -webkit-box-shadow: 3px 4px 5px 4px #bdb8b86b;
             box-shadow: 3px 4px 5px 4px #bdb8b86b;
   }
-  /* SECTION RESTAURANTS */
-  .restaurants__list {
-    width: 100%;
-    padding: 10px;
-  }
-  .restaurant {
-    height: 300px;
-  }
-  .restaurant .restaurant__image {
-    padding: 10px;
-    width: 40px;
-    height: 40%;
-  }
-  .restaurant .restaurant__description .restaurant__title {
-    color: black;
-    font-weight: bold;
-    background-color: yellow;
-  }
-  .restaurant .restaurant__description .restaurant__location {
-    color: grey;
-  }
-  .restaurant .restaurant__description .restaurant_info {
-    color: white;
-    background-color: #99E2D0;
-  }
+  /* info */
+  /*FIN DE L'ARTICLE INFO*/
+  /*ARTICLE FONCTIONNEMENT */
   .ctatitle {
     font-size: x-large;
     font-family: "Roboto", sans-serif;
@@ -106,6 +94,7 @@
   .ctaitem {
     margin-bottom: 28px;
     display: list-item;
+    /* cta item__contenair */
   }
   .ctaitem .ctaitem__contenair {
     display: -webkit-box;
@@ -140,5 +129,41 @@
     font-size: 22px;
     color: #8e8e8e;
   }
+  /*ctaitem */
+  /*FIN DE l'ARTICLE FONCTIONNEMENT */
+  /* SECTION RESTAURANTSLIST */
+  .restaurants__list {
+    width: 100%;
+    padding: 10px;
+  }
+  .restaurant {
+    height: 300px;
+  }
+  .restaurant .restaurant__image {
+    padding: 10px;
+    width: 40px;
+    height: 40%;
+  }
+  .restaurant .restaurant__description .restaurant__title {
+    color: black;
+    font-weight: bold;
+    background-color: yellow;
+  }
+  .restaurant .restaurant__description .restaurant__location {
+    color: grey;
+  }
+  .restaurant .restaurant__description .restaurant_info {
+    color: white;
+    background-color: #99E2D0;
+  }
+  /*RESTAURANT */
+  /* FIN DE LA SECTION RESTAURANTS LIST */
+  /*FOOTER */
+  footer .logo__bye {
+    width: 40%;
+  }
+  /*footer */
 }
+
+/* MEDIAQUERIES */
 /*# sourceMappingURL=style.css.map */

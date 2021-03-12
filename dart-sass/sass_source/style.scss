@@ -82,10 +82,10 @@ $texte:'Roboto', sans-serif;
 				opacity: 80%;
 				box-shadow:3px 4px 5px 4px #bdb8b86b;
 				}
-			}
-		}
+			}/*info button */
+		} /*info cta */
 		
-	}
+	} /* info */
 	/*FIN DE L'ARTICLE INFO*/
 
 	/*ARTICLE FONCTIONNEMENT */
@@ -129,8 +129,8 @@ $texte:'Roboto', sans-serif;
 				color: #8e8e8e;
 			}
 
-		}
-	}
+		}/* cta item__contenair */
+	} /*ctaitem */
 
 	/*FIN DE l'ARTICLE FONCTIONNEMENT */
 
@@ -160,12 +160,16 @@ $texte:'Roboto', sans-serif;
 				background-color: $tertiaire;
 			}
 		}
-	}
+	}/*RESTAURANT */
 /* FIN DE LA SECTION RESTAURANTS LIST */
 
-
+/*FOOTER */
+	footer{
+		.logo__bye{
+			width: 40%;
+		}
+	}/*footer */
 	
 
-
-}
+} /* MEDIAQUERIES */
 
