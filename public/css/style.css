@@ -1,5 +1,6 @@
 /*12mars 8h50--10h
 10h25 11h25 figcaption nouveau a terminer avant de commit */
+/*7h30 9h */
 /*Couleurs*/
 /*Fonts*/
 /*Taille de police */
@@ -7,83 +8,66 @@
   body {
     width: 100%;
     margin: 0;
-    padding: 0;
-  }
+    padding: 0; }
+
   /* HEADER */
   .banniere {
     text-align: center;
-    padding: 19px 0px 8px;
-  }
-  .banniere .logo__hello {
-    width: 170px;
-  }
+    padding: 19px 0px 8px; }
+    .banniere .logo__hello {
+      width: 170px; }
+
   /*HEADER */
   /*SECTION */
   /*BLOCCTA */
   /*ARTICLE INFO */
   .info {
-    /*info cta */
-  }
-  .info .info__form {
-    color: #353535;
-    background-color: #eaeaea;
-    margin-bottom: 0px;
-    margin: 0px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .info .info__form .fa-map-marker-alt {
-    margin-right: 10px;
-  }
-  .info .info__form .info__localisation {
-    font-family: "Roboto", sans-serif;
-    font-size: medium;
-    font-weight: 800;
-  }
-  .info .info__cta {
-    text-align: center;
-    background: #f6f6f6;
-    padding-top: 20px;
-    padding-right: 20px;
-    padding-bottom: 20px;
-    padding-left: 20px;
-    /*info button */
-  }
-  .info .info__cta .info__title {
-    font-family: "Roboto", sans-serif;
-    font-size: x-large;
-    margin: 17px 30px 15px 30px;
-  }
-  .info .info__cta .info__description {
-    color: #959595;
-    font-family: "Roboto", sans-serif;
-    font-size: large;
-  }
-  .info .info__cta .info__button {
-    margin: 12px 0px 34px 0px;
-    font-size: large;
-    padding: 12px 30px 16px 30px;
-    font-family: "Roboto", sans-serif;
-    background: linear-gradient(174deg, #FF79DA, #9356DC);
-    height: 3em;
-    color: #FFF;
-    border-radius: 40px;
-    -webkit-box-shadow: 2px 3px 4px 1px #bfb8b8;
-            box-shadow: 2px 3px 4px 1px #bfb8b8;
-    border: none;
-  }
-  .info .info__cta .info__button:active {
-    opacity: 80%;
-    -webkit-box-shadow: 3px 4px 5px 4px #bdb8b86b;
-            box-shadow: 3px 4px 5px 4px #bdb8b86b;
-  }
+    /*info cta */ }
+    .info .info__form {
+      color: #353535;
+      background-color: #eaeaea;
+      margin-bottom: 0px;
+      margin: 0px;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      .info .info__form .fa-map-marker-alt {
+        margin-right: 10px; }
+      .info .info__form .info__localisation {
+        font-family: "Roboto", sans-serif;
+        font-size: medium;
+        font-weight: 800; }
+    .info .info__cta {
+      text-align: center;
+      background: #f6f6f6;
+      padding-top: 20px;
+      padding-right: 20px;
+      padding-bottom: 20px;
+      padding-left: 20px;
+      /*info button */ }
+      .info .info__cta .info__title {
+        font-family: "Roboto", sans-serif;
+        font-size: x-large;
+        margin: 17px 30px 15px 30px; }
+      .info .info__cta .info__description {
+        color: #959595;
+        font-family: "Roboto", sans-serif;
+        font-size: large; }
+      .info .info__cta .info__button {
+        margin: 12px 0px 34px 0px;
+        font-size: large;
+        padding: 12px 30px 16px 30px;
+        font-family: "Roboto", sans-serif;
+        background: linear-gradient(174deg, #FF79DA, #9356DC);
+        height: 3em;
+        color: #FFF;
+        border-radius: 40px;
+        box-shadow: 2px 3px 4px 1px #bfb8b8;
+        border: none; }
+        .info .info__cta .info__button:active {
+          opacity: 80%;
+          box-shadow: 3px 4px 5px 4px #bdb8b86b; }
+
   /* info */
   /*FIN DE L'ARTICLE INFO*/
   /*ARTICLE FONCTIONNEMENT */
@@ -91,99 +75,91 @@
     font-size: x-large;
     font-family: "Roboto", sans-serif;
     margin: 43px 0px 27px 0px;
-    padding-left: 25px;
-  }
+    padding-left: 25px; }
+
   .ctaitem {
     margin-bottom: 28px;
     display: list-item;
-    /* cta item__contenair */
-  }
-  .ctaitem .ctaitem__contenair {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    background-color: #f6f6f6;
-    padding: 10px;
-    border-radius: 20px;
-    -webkit-box-shadow: 2px 4px 8px #d8d8d8;
-            box-shadow: 2px 4px 8px #d8d8d8;
-  }
-  .ctaitem .ctaitem__contenair:hover {
-    background-color: #f5eef2;
-  }
-  .ctaitem .ctaitem__contenair:active {
-    background-color: #f5eef2;
-  }
-  .ctaitem .ctaitem__contenair:active .fas {
-    background-color: #f5eef2;
-    color: #9356DC;
-  }
-  .ctaitem .ctaitem__contenair .ctaitem__action {
-    font-family: "Roboto", sans-serif;
-    font-size: medium;
-    font-weight: 700;
-  }
-  .ctaitem .ctaitem__contenair .fas {
-    margin: 18px 24px 18px 27px;
-    font-size: 22px;
-    color: #8e8e8e;
-  }
+    /* cta item__contenair */ }
+    .ctaitem .ctaitem__contenair {
+      display: flex;
+      align-items: center;
+      background-color: #f6f6f6;
+      padding: 10px;
+      border-radius: 20px;
+      box-shadow: 2px 4px 8px #d8d8d8; }
+      .ctaitem .ctaitem__contenair:hover {
+        background-color: #f5eef2; }
+      .ctaitem .ctaitem__contenair:active {
+        background-color: #f5eef2; }
+        .ctaitem .ctaitem__contenair:active .fas {
+          background-color: #f5eef2;
+          color: #9356DC; }
+      .ctaitem .ctaitem__contenair .ctaitem__action {
+        font-family: "Roboto", sans-serif;
+        font-size: medium;
+        font-weight: 700; }
+      .ctaitem .ctaitem__contenair .fas {
+        margin: 18px 24px 18px 27px;
+        font-size: 22px;
+        color: #8e8e8e; }
+
   /*ctaitem */
   /*FIN DE l'ARTICLE FONCTIONNEMENT */
   /* SECTION RESTAURANTSLIST */
   .restaurantslist {
     padding: 10px;
-    background-color: #f6f6f6;
-  }
+    background-color: #f6f6f6; }
+
   .restaurant {
     height: 225px;
     border-radius: 20px;
     background-color: white;
-    margin-bottom: 20px;
-  }
-  .restaurant .restaurant__image {
-    -o-object-fit: cover;
-       object-fit: cover;
-    width: 100%;
-    height: 70%;
-    border-radius: 12px 12px 0px 0px;
-  }
-  .restaurant .restaurant__description {
-    padding: 10px;
-    font-family: "Roboto", sans-serif;
-    border-radius: 0px 0px 12px 12px;
-  }
-  .restaurant .restaurant__description .restaurant__title {
-    margin: 0px;
-    color: black;
-    font-weight: bold;
-    white-space: nowrap;
-  }
-  .restaurant .restaurant__description .restaurant__location {
-    color: grey;
-    margin: 0px;
-  }
-  .restaurant .restaurant__description .restaurant__info {
-    position: absolute;
-    color: white;
-    z-index: 1;
-    -webkit-margin-before: -204px;
-            margin-block-start: -204px;
-    -webkit-margin-start: 193px;
-            margin-inline-start: 193px;
-    background-color: green;
-  }
+    margin-bottom: 20px; }
+    .restaurant .restaurant__image {
+      object-fit: cover;
+      width: 100%;
+      height: 70%;
+      border-radius: 12px 12px 0px 0px; }
+    .restaurant .restaurant__description {
+      padding: 10px;
+      font-family: "Roboto", sans-serif;
+      border-radius: 0px 0px 12px 12px; }
+      .restaurant .restaurant__description .restaurant__title {
+        margin: 0px;
+        color: black;
+        font-weight: bold;
+        white-space: nowrap; }
+      .restaurant .restaurant__description .restaurant__location {
+        color: grey;
+        margin: 0px; }
+      .restaurant .restaurant__description .restaurant__info {
+        position: absolute;
+        color: white;
+        z-index: 1;
+        margin-block-start: -204px;
+        margin-inline-start: 193px;
+        background-color: green; }
+
   /*RESTAURANT */
   /* FIN DE LA SECTION RESTAURANTS LIST */
   /*FOOTER */
-  footer .logo__bye {
-    width: 40%;
-  }
-  /*footer */
-}
+  footer {
+    font-family: "Roboto", sans-serif;
+    text-decoration: none;
+    font-size: medium;
+    background-color: #353535;
+    color: white; }
+    footer .logo__bye {
+      width: 40%;
+      color: white; }
+    footer .bye__info {
+      list-style: none; }
+    footer a {
+      color: white;
+      text-decoration: none; }
 
+  /*footer */ }
 /* MEDIAQUERIES */
+
 /*# sourceMappingURL=style.css.map */
