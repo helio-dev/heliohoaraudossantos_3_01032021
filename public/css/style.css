@@ -8,7 +8,8 @@
   body {
     width: 100%;
     margin: 0;
-    padding: 0; }
+    padding: 0;
+    font-family: "Roboto", sans-serif; }
 
   /* HEADER */
   .banniere {
@@ -53,7 +54,7 @@
         color: #959595;
         font-family: "Roboto", sans-serif;
         font-size: large; }
-      .info .info__cta .info__button {
+      .info .info__cta .info__button, .info .info__cta .menu .menu__button, .menu .info .info__cta .menu__button {
         margin: 12px 0px 34px 0px;
         font-size: large;
         padding: 12px 30px 16px 30px;
@@ -64,7 +65,7 @@
         border-radius: 40px;
         box-shadow: 2px 3px 4px 1px #bfb8b8;
         border: none; }
-        .info .info__cta .info__button:active {
+        .info .info__cta .info__button:active, .info .info__cta .menu .menu__button:active, .menu .info .info__cta .menu__button:active {
           opacity: 80%;
           box-shadow: 3px 4px 5px 4px #bdb8b86b; }
 
@@ -159,7 +160,40 @@
       color: white;
       text-decoration: none; }
 
-  /*footer */ }
+  /*footer */
+  /* MENU.HTML */
+  .cover {
+    width: 100%; }
+
+  .menu {
+    background-color: #f6f6f6;
+    width: 100%;
+    margin-top: -15%;
+    border-radius: 25px 25px 0px 0px;
+    position: absolute;
+    padding: 3%; }
+    .menu .menu__categorie {
+      font-family: "Roboto", sans-serif;
+      font-weight: 100;
+      color: #353535; }
+    .menu .menu__title {
+      font-family: "Shrikhand", cursive;
+      font-weight: 100; }
+
+  .plat {
+    background-color: white;
+    margin: 3%;
+    padding: 3%;
+    border-radius: 20px; }
+    .plat .plat__title {
+      margin-top: 0px;
+      font-weight: 600; }
+    .plat .plat__info {
+      display: inline;
+      color: #353535; }
+
+  /* plat */
+  /* MENU.HTML */ }
 /* MEDIAQUERIES */
 
 /*# sourceMappingURL=style.css.map */
