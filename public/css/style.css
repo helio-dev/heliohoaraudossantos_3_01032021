@@ -135,12 +135,13 @@
         color: grey;
         margin: 0px; }
       .restaurant .restaurant__description .restaurant__info {
+        padding: 2% 4% 2% 4%;
         position: absolute;
-        color: white;
+        color: #008766;
         z-index: 1;
-        margin-block-start: -204px;
-        margin-inline-start: 193px;
-        background-color: green; }
+        margin-block-start: -53%;
+        margin-inline-start: 42%;
+        background-color: #99e2d0; }
 
   /*RESTAURANT */
   /* FIN DE LA SECTION RESTAURANTS LIST */
@@ -195,5 +196,7 @@
   /* plat */
   /* MENU.HTML */ }
 /* MEDIAQUERIES */
+/* error style.scss */
+/* error style.scss */
 
 /*# sourceMappingURL=style.css.map */
