@@ -22,6 +22,22 @@
   /*SECTION */
   /*BLOCCTA */
   /*ARTICLE INFO */
+  .info__button, .menu__button {
+    margin: 12px 0px 34px 0px;
+    font-size: large;
+    padding: 12px 30px 16px 30px;
+    font-family: "Roboto", sans-serif;
+    background: linear-gradient(174deg, #FF79DA, #9356DC);
+    height: 3em;
+    color: #FFF;
+    border-radius: 40px;
+    box-shadow: 2px 3px 4px 1px #bfb8b8;
+    border: none; }
+    .info__button:active, .menu__button:active {
+      opacity: 80%;
+      box-shadow: 3px 4px 5px 4px #bdb8b86b; }
+
+  /*info button */
   .info {
     /*info cta */ }
     .info .info__form {
@@ -44,8 +60,7 @@
       padding-top: 20px;
       padding-right: 20px;
       padding-bottom: 20px;
-      padding-left: 20px;
-      /*info button */ }
+      padding-left: 20px; }
       .info .info__cta .info__title {
         font-family: "Roboto", sans-serif;
         font-size: x-large;
@@ -54,20 +69,6 @@
         color: #959595;
         font-family: "Roboto", sans-serif;
         font-size: large; }
-      .info .info__cta .info__button, .info .info__cta .menu .menu__button, .menu .info .info__cta .menu__button {
-        margin: 12px 0px 34px 0px;
-        font-size: large;
-        padding: 12px 30px 16px 30px;
-        font-family: "Roboto", sans-serif;
-        background: linear-gradient(174deg, #FF79DA, #9356DC);
-        height: 3em;
-        color: #FFF;
-        border-radius: 40px;
-        box-shadow: 2px 3px 4px 1px #bfb8b8;
-        border: none; }
-        .info .info__cta .info__button:active, .info .info__cta .menu .menu__button:active, .menu .info .info__cta .menu__button:active {
-          opacity: 80%;
-          box-shadow: 3px 4px 5px 4px #bdb8b86b; }
 
   /* info */
   /*FIN DE L'ARTICLE INFO*/
@@ -147,16 +148,25 @@
   /* FIN DE LA SECTION RESTAURANTS LIST */
   /*FOOTER */
   footer {
+    padding: 4% 0%;
     font-family: "Roboto", sans-serif;
     text-decoration: none;
     font-size: medium;
     background-color: #353535;
     color: white; }
+    footer .omf__title {
+      font-family: "Shrikhand", cursive;
+      color: white;
+      font-size: medium;
+      font-weight: normal; }
     footer .logo__bye {
       width: 40%;
       color: white; }
     footer .bye__info {
       list-style: none; }
+      footer .bye__info .fas {
+        font-size: small;
+        width: 21px; }
     footer a {
       color: white;
       text-decoration: none; }
@@ -165,6 +175,10 @@
   /* MENU.HTML */
   .cover {
     width: 100%; }
+
+  .menu__button {
+    padding: 0% 16% 0% 15%;
+    margin: 9% 0% 22% 17%; }
 
   .menu {
     background-color: #f6f6f6;
