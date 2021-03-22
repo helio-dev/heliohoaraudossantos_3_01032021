@@ -8,8 +8,6 @@
 /*Taille de police */
 @media (max-width: 640px) {
   body {
-    color: reds;
-    width: 100%;
     margin: 0;
     padding: 0;
     font-family: "Roboto", sans-serif;
@@ -191,7 +189,14 @@
     margin-inline-start: 53%;
     background-color: #99e2d0;
   }
+  .restaurant .fa-heart-container {
+    width: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   .restaurant .fa-heart:active {
+    font-size: larger;
     background: -moz-linear-gradient(top, #e72c83 0%, #a742c6 100%);
     background: -webkit-linear-gradient(top, #e72c83 0%, #a742c6 100%);
     background: linear-gradient(to bottom, #e72c83 0%, #a742c6 100%);
@@ -257,8 +262,16 @@
   }
   .menu .menu__categorie {
     font-family: "Roboto", sans-serif;
+    font-size: medium;
     font-weight: 100;
     color: #353535;
+    margin-bottom: 5px;
+  }
+  .menu .menuborder {
+    display: block;
+    background-color: #99E2D0;
+    width: 40px;
+    height: 3px;
   }
   .menu .menu__title {
     font-family: "Shrikhand", cursive;
@@ -270,10 +283,12 @@
     margin: 3%;
     padding: 3%;
     border-radius: 20px;
+    box-shadow: 0px 5px 14px #bbb9b9;
   }
   .plat .plat__title {
     margin-top: 0px;
     font-weight: 600;
+    margin-bottom: 7px;
   }
   .plat .plat__info {
     display: inline;
