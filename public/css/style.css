@@ -285,6 +285,21 @@
     border-radius: 20px;
     box-shadow: 0px 5px 14px #bbb9b9;
   }
+  .plat:hover .platvalidation {
+    display: flex;
+    background-color: #99e2d0;
+    width: 4rem;
+    align-items: center;
+    justify-content: center;
+    transition-duration: 0.4s;
+  }
+  .plat:hover .platvalidation .fa-check-circle {
+    margin: 5px;
+    border-radius: 50px;
+    color: white;
+    background-color: red;
+    font-size: 10px;
+  }
   .plat .plat__title {
     margin-top: 0px;
     font-weight: 600;
@@ -297,6 +312,15 @@
   .plat .plat__price {
     position: absolute;
     right: 33px;
+  }
+  .plat .platvalidation {
+    display: none;
+    position: absolute;
+    right: 0px;
+  }
+  .plat .platvalidation .fa-check-circle {
+    color: white;
+    background-color: red;
   }
 
   /* plat */
