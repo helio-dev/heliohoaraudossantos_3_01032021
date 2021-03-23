@@ -273,57 +273,65 @@
     width: 40px;
     height: 3px;
   }
-  .menu .menu__title {
+
+  .menu__title {
     font-family: "Shrikhand", cursive;
     font-weight: 100;
   }
 
-  .plat {
+  .menuitem {
     background-color: white;
+    display: flex;
+    justify-content: space-between;
     margin: 3%;
-    padding: 3%;
     border-radius: 20px;
     box-shadow: 0px 5px 14px #bbb9b9;
   }
-  .plat:hover .platvalidation {
-    display: flex;
-    background-color: #99e2d0;
-    width: 4rem;
-    align-items: center;
-    justify-content: center;
-    transition-duration: 0.4s;
-  }
-  .plat:hover .platvalidation .fa-check-circle {
-    margin: 5px;
-    border-radius: 50px;
-    color: white;
-    background-color: red;
-    font-size: 10px;
-  }
-  .plat .plat__title {
+  .menuitem .menuitem__title {
     margin-top: 0px;
     font-weight: 600;
     margin-bottom: 7px;
   }
-  .plat .plat__info {
+  .menuitem .menuitem__info {
     display: inline;
     color: #353535;
   }
-  .plat .plat__price {
-    position: absolute;
-    right: 33px;
+  .menuitem .menuitem__validation {
+    width: 1px;
+    background-color: white;
+    border-radius: 0px 20px 20px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition-duration: 0.6s;
   }
-  .plat .platvalidation {
-    display: none;
-    position: absolute;
-    right: 0px;
+  .menuitem .menuitem__validation:hover {
+    background-color: #99E2D0;
+    width: 40px;
   }
-  .plat .platvalidation .fa-check-circle {
-    color: white;
-    background-color: red;
+  .menuitem .menuitem__validation .plat__validation {
+    margin: -1rem -5rem -1rem 1rem;
+    display: block;
+    background-color: #99e2d0;
+    align-items: center;
+    justify-content: center;
+    transition-duration: 0.4s;
+  }
+  .menuitem .menuitem__wrapicon {
+    height: 1.6rem;
+    width: 1.6rem;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    transform: rotate(180deg);
+    transition-duration: 0.5s;
+  }
+  .menuitem .menuitem__icon {
+    color: red;
   }
 
-  /* plat */
   /* MENU.HTML */
 }
 /* MEDIAQUERIES */
