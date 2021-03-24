@@ -291,6 +291,9 @@
     background-color: #99E2D0;
     width: 40px;
   }
+  .menuitem .menuitem__header {
+    padding: 13px 0px 10px 12px;
+  }
   .menuitem .menuitem__title {
     margin-top: 0px;
     font-weight: 600;
@@ -299,6 +302,9 @@
   .menuitem .menuitem__info {
     display: inline;
     color: #353535;
+  }
+  .menuitem .menuitem__price {
+    padding-top: 40px;
   }
   .menuitem .menuitem__validation {
     width: 0px;
