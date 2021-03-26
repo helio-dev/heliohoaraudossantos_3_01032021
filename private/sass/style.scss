@@ -339,6 +339,7 @@ $texte:'Roboto', sans-serif;
 	}
 
 	.menu__main{
+		margin: 39px 0px 4px 0px;
 		font-size: medium;
 		font-family: $texte;
 		color: #7b7b7b;
@@ -452,6 +453,7 @@ $texte:'Roboto', sans-serif;
 
 /* DESKTOP */
 /*Taille de police */
+/*
 @media (max-width: 640px){
 	
 
@@ -461,6 +463,7 @@ $texte:'Roboto', sans-serif;
 		font-family: $texte;
     }
 /* HEADER */
+/*
 	.banniere{
 		text-align: center;
 		padding: 19px 0px 8px;
@@ -473,6 +476,7 @@ $texte:'Roboto', sans-serif;
 /*SECTION */
 /*BLOCCTA */
 	/*ARTICLE INFO */
+	/*
 	.info__button {
 		margin: 12px 0px 34px 0px;
 		font-size: large;
@@ -494,6 +498,7 @@ $texte:'Roboto', sans-serif;
 				border: none;
 			}
 		}/*info button */
+		/*
     .info{			
 		.info__form{
 			color: #353535;
@@ -533,11 +538,12 @@ $texte:'Roboto', sans-serif;
 			}
 			
 		} /*info cta */
-		
+	/*	
 	} /* info */
 	/*FIN DE L'ARTICLE INFO*/
 
 	/*ARTICLE FONCTIONNEMENT */
+	/*
 	.title{
 		font-size: x-large;
 		font-family: $texte;
@@ -595,6 +601,7 @@ $texte:'Roboto', sans-serif;
 			}
 
 		}/* cta item__contenair */
+/*		
 	} /*ctaitem */
 
 	/*FIN DE l'ARTICLE FONCTIONNEMENT */
@@ -679,6 +686,7 @@ $texte:'Roboto', sans-serif;
 /* FIN DE LA SECTION RESTAURANTS LIST */
 
 /*FOOTER */
+/*
 	footer{
 		padding: 4% 0%;
 		font-family: $texte;
@@ -713,6 +721,7 @@ $texte:'Roboto', sans-serif;
 	}/*footer */
 	
 	/* MENU.HTML */
+	/*
 	.cover{
 		width: 100%;
 	}
@@ -854,7 +863,7 @@ $texte:'Roboto', sans-serif;
 	
 	
 	/* MENU.HTML */
-
+/*
 } /* MEDIAQUERIES */
 
 /* error style.scss */
