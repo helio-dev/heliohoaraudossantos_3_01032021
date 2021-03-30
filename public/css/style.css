@@ -1,8 +1,9 @@
 @charset "UTF-8";
+/*Couleurs*/
+/*Fonts*/
 /*12mars 8h50--10h
 10h25 11h25 figcaption nouveau a terminer avant de commit */
 /*7h30 9h */
-/*Couleurs*/
 .fa-heart::after {
   content: "";
 }
@@ -562,7 +563,7 @@ footer a {
 	body {
 		margin: 0;
 		padding: 0;		
-		font-family: $texte;
+		font-family: fontsandcolors.$texte;
     }
 /* HEADER */
 /*

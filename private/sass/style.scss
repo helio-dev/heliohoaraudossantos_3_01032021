@@ -2,11 +2,7 @@
 10h25 11h25 figcaption nouveau a terminer avant de commit */
 /*7h30 9h */
 
-/*Couleurs*/
-$primaire:#9356DC;
-$secondaire: #FF79DA;
-$tertiaire: #99E2D0;
-$quaternaire: #eaeaea;
+@use 'abstract/fontsandcolors';
 .fa-heart::after{
 	content: "\f004";
 }
@@ -52,7 +48,7 @@ $quaternaire: #eaeaea;
   .lds-roller div:nth-child(1):after {
 	top: 63px;
 	left: 63px;
-	background: $primaire
+	background: fontsandcolors.$primaire
   }
   .lds-roller div:nth-child(2) {
 	animation-delay: -0.072s;
@@ -60,7 +56,7 @@ $quaternaire: #eaeaea;
   .lds-roller div:nth-child(2):after {
 	top: 68px;
 	left: 56px;
-	background: $tertiaire;
+	background: fontsandcolors.$tertiaire;
   }
   .lds-roller div:nth-child(3) {
 	animation-delay: -0.108s;
@@ -68,7 +64,7 @@ $quaternaire: #eaeaea;
   .lds-roller div:nth-child(3):after {
 	top: 71px;
 	left: 48px;
-	background: $secondaire
+	background: fontsandcolors.$secondaire
   }
   .lds-roller div:nth-child(4) {
 	animation-delay: -0.144s;
@@ -116,14 +112,14 @@ $quaternaire: #eaeaea;
 /* loader */
 
 /*Fonts*/
-$titre:'Shrikhand', cursive;
-$texte:'Roboto', sans-serif;
+fontsandcolors.$titre:'Shrikhand', cursive;
+fontsandcolors.$texte:'Roboto', sans-serif;
 
 /* DEKSTOP to line 411 */ 
 	body {
 		margin: 0;
 		padding: 0;		
-		font-family: $texte;
+		font-family: fontsandcolors.$texte;
     }
 /* HEADER */
 	.banniere{
@@ -146,8 +142,8 @@ $texte:'Roboto', sans-serif;
 		margin: 12px 0px 34px 0px;
 		font-size: large;
 		padding: 12px 30px 16px 30px;
-		font-family: $texte;
-		background:linear-gradient(174deg,$secondaire, $primaire);
+		font-family: fontsandcolors.$texte;
+		background:linear-gradient(174deg,fontsandcolors.$secondaire, fontsandcolors.$primaire);
 		height: 3em;
 		color: #FFF;
 		border-radius: 40px;
@@ -177,7 +173,7 @@ $texte:'Roboto', sans-serif;
 				margin-right: 10px;
 				}
 			.info__localisation{
-				font-family: $texte;
+				font-family: fontsandcolors.$texte;
 				font-size: medium;
 				font-weight: 800;
 			}
@@ -191,13 +187,13 @@ $texte:'Roboto', sans-serif;
 			padding-bottom: 20px;
 			padding-left: 20px;
 			.info__title{
-				font-family: $texte;
+				font-family: fontsandcolors.$texte;
 				font-size: x-large;
 				margin: 17px 30px 15px 30px;
 			}
     		.info__description{
 			color: #959595;	
-			font-family: $texte;	
+			font-family: fontsandcolors.$texte;	
 			font-size: large;
 			}
 			
@@ -209,7 +205,7 @@ $texte:'Roboto', sans-serif;
 	/*ARTICLE FONCTIONNEMENT */
 	.title{
 		font-size: x-large;
-		font-family: $texte;
+		font-family: fontsandcolors.$texte;
 		margin: 43px 0px 27px 0px;
 		padding-left: 25px;
 	}
@@ -227,7 +223,7 @@ $texte:'Roboto', sans-serif;
 			width: 10px;			
 			padding: 5px 7px 5px 8px;
 			margin-inline-start: 20px;
-			background-color: $primaire;
+			background-color: fontsandcolors.$primaire;
 			color: white;
 			font-size: small;
 		}
@@ -248,11 +244,11 @@ $texte:'Roboto', sans-serif;
 				background-color: #f5eef2;
 				.fas{
 					background-color: #f5eef2;
-					color: $primaire;
+					color: fontsandcolors.$primaire;
 				}
 			}
 			.ctaitem__action{
-				font-family: $texte;
+				font-family: fontsandcolors.$texte;
 				font-size: medium;
 				font-weight: 700;
 			}
@@ -322,7 +318,7 @@ $texte:'Roboto', sans-serif;
 		}
 		.restaurant__description{
 			padding:10px;
-			font-family: $texte;
+			font-family: fontsandcolors.$texte;
 			border-radius: 0px 0px 12px 12px;
 			.restaurant__title{
 				margin: 0px;
@@ -375,13 +371,13 @@ $texte:'Roboto', sans-serif;
 /*FOOTER */
 	footer{
 		padding: 4% 0%;
-		font-family: $texte;
+		font-family: fontsandcolors.$texte;
 		text-decoration: none;
 		font-size: medium;
 		background-color: #353535;
 		color: white;
 		.omf__title{
-			font-family: $titre;
+			font-family: fontsandcolors.$titre;
 			color: white;
 			font-size: medium;
 			font-weight: normal;
@@ -423,7 +419,7 @@ $texte:'Roboto', sans-serif;
 		position: relative;
 		padding: 3%;
 			.menu__categorie{
-				font-family: $texte;
+				font-family: fontsandcolors.$texte;
 				font-size: medium;
 				font-weight: 100;
 				color: #353535;
@@ -441,20 +437,20 @@ $texte:'Roboto', sans-serif;
 			}
 			.menuborder{
 				display: block;
-				background-color: $tertiaire;
+				background-color: fontsandcolors.$tertiaire;
 				width: 40px;
 				height: 3px;
 			}
 	}
 	.menu__title{
-		font-family: $titre;
+		font-family: fontsandcolors.$titre;
 		font-weight: 100;
 	}
 
 	.menu__main{
 		margin: 39px 0px 4px 0px;
 		font-size: medium;
-		font-family: $texte;
+		font-family: fontsandcolors.$texte;
 		color: #7b7b7b;
 	}
 
@@ -471,12 +467,12 @@ $texte:'Roboto', sans-serif;
 		 
 		
 			&:hover .menuitem__validation{
-				background-color: $tertiaire;
+				background-color: fontsandcolors.$tertiaire;
 				width: 18%;
 					.menuitem__icon{
 						font-size: 10px;
 						transform: rotate(5deg);
-						color: $tertiaire;
+						color: fontsandcolors.$tertiaire;
 						transition: rotate 500ms, color 10s;
 						-webkit-transition: -webkit-transform 500ms ease-in-out;
     					-ms-transition: -ms-transform 500ms ease-in-out;
@@ -486,7 +482,7 @@ $texte:'Roboto', sans-serif;
 			}
 			.menuitem__icon{
 				font-size: 1px;
-				color: $tertiaire;
+				color: fontsandcolors.$tertiaire;
 				transform: rotate(80deg);
 			}
 			
@@ -539,7 +535,7 @@ $texte:'Roboto', sans-serif;
 				justify-content:center;
 				transition-duration: 0.6s;
 				&:hover{
-					background-color: $tertiaire;
+					background-color: fontsandcolors.$tertiaire;
 					width: 40px;
 					
 				}			
@@ -582,7 +578,7 @@ $texte:'Roboto', sans-serif;
 	body {
 		margin: 0;
 		padding: 0;		
-		font-family: $texte;
+		font-family: fontsandcolors.$texte;
     }
 /* HEADER */
 /*
