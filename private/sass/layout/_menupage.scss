@@ -5,7 +5,14 @@
 .cover{
     width: 100%;
 }
-
+.menumaintitle{
+    font-family: fontsandcolors.$titre;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+    height: 5rem;
+}
 .menu__button{
     /* 
     @extend .info__button;
