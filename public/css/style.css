@@ -1,9 +1,6 @@
 @charset "UTF-8";
 /*Couleurs*/
 /*Fonts*/
-/*12mars 8h50--10h
-10h25 11h25 figcaption nouveau a terminer avant de commit */
-/*7h30 9h */
 .fa-heart::after {
   content: "";
 }
@@ -129,7 +126,6 @@
   }
 }
 /* loader */
-/*Fonts*/
 /* DEKSTOP to line 411 */
 body {
   margin: 0;
@@ -964,5 +960,8 @@ footer a {
 } /* MEDIAQUERIES */
 /* error style.scss */
 /* error style.scss */
+/*12mars 8h50--10h
+10h25 11h25 figcaption nouveau a terminer avant de commit */
+/*7h30 9h */
 
 /*# sourceMappingURL=style.css.map */
