@@ -1,7 +1,133 @@
+@charset "UTF-8";
 /*12mars 8h50--10h
 10h25 11h25 figcaption nouveau a terminer avant de commit */
 /*7h30 9h */
 /*Couleurs*/
+.fa-heart::after {
+  content: "";
+}
+
+@keyframes apparition {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.far {
+  font-size: x-large;
+  color: black;
+  background-color: white;
+}
+
+/*loader */
+.lds-roller {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+
+.lds-roller div {
+  animation: lds-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  transform-origin: 40px 40px;
+}
+
+.lds-roller div:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  margin: -4px 0 0 -4px;
+}
+
+.lds-roller div:nth-child(1) {
+  animation-delay: -0.036s;
+}
+
+.lds-roller div:nth-child(1):after {
+  top: 63px;
+  left: 63px;
+  background: #9356DC;
+}
+
+.lds-roller div:nth-child(2) {
+  animation-delay: -0.072s;
+}
+
+.lds-roller div:nth-child(2):after {
+  top: 68px;
+  left: 56px;
+  background: #99E2D0;
+}
+
+.lds-roller div:nth-child(3) {
+  animation-delay: -0.108s;
+}
+
+.lds-roller div:nth-child(3):after {
+  top: 71px;
+  left: 48px;
+  background: #FF79DA;
+}
+
+.lds-roller div:nth-child(4) {
+  animation-delay: -0.144s;
+}
+
+.lds-roller div:nth-child(4):after {
+  top: 72px;
+  left: 40px;
+}
+
+.lds-roller div:nth-child(5) {
+  animation-delay: -0.18s;
+}
+
+.lds-roller div:nth-child(5):after {
+  top: 71px;
+  left: 32px;
+}
+
+.lds-roller div:nth-child(6) {
+  animation-delay: -0.216s;
+}
+
+.lds-roller div:nth-child(6):after {
+  top: 68px;
+  left: 24px;
+}
+
+.lds-roller div:nth-child(7) {
+  animation-delay: -0.252s;
+}
+
+.lds-roller div:nth-child(7):after {
+  top: 63px;
+  left: 17px;
+}
+
+.lds-roller div:nth-child(8) {
+  animation-delay: -0.288s;
+}
+
+.lds-roller div:nth-child(8):after {
+  top: 56px;
+  left: 12px;
+}
+
+@keyframes lds-roller {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/* loader */
 /*Fonts*/
 /* DEKSTOP to line 411 */
 body {
@@ -17,6 +143,10 @@ body {
 }
 .banniere .logo__hello {
   width: 170px;
+}
+.banniere .fa-arrow-left {
+  color: black;
+  font-size: large;
 }
 
 /*HEADER */
@@ -51,10 +181,11 @@ body {
   /*info cta */
 }
 .info .info__form {
+  background-color: #eaeaea;
   color: #353535;
   margin-bottom: 0px;
   margin: auto;
-  width: 30%;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -74,17 +205,16 @@ body {
   padding-right: 20px;
   padding-bottom: 20px;
   padding-left: 20px;
-  box-shadow: -3px -1px 13px 12px #f3f3f3F3;
 }
 .info .info__cta .info__title {
   font-family: "Roboto", sans-serif;
-  font-size: medium;
+  font-size: x-large;
   margin: 17px 30px 15px 30px;
 }
 .info .info__cta .info__description {
   color: #959595;
   font-family: "Roboto", sans-serif;
-  font-size: medium;
+  font-size: large;
 }
 
 /* info */
@@ -98,12 +228,11 @@ body {
 }
 
 .cta {
-  display: inline-flex;
+  display: block;
   width: 100%;
 }
 
 .ctaitem {
-  width: 35%;
   margin-bottom: 28px;
   display: flex;
   align-items: center;
@@ -159,7 +288,7 @@ body {
 }
 
 .restaurantslist__contenair {
-  display: grid;
+  display: block;
   grid-template-columns: 1fr 1fr;
 }
 
@@ -236,6 +365,9 @@ body {
   justify-content: center;
   align-items: center;
 }
+.restaurant .prout {
+  background-color: white;
+}
 .restaurant .fa-heart {
   color: black;
 }
@@ -311,6 +443,9 @@ footer a {
   color: #353535;
   margin-bottom: 5px;
 }
+.menu .menu__categorie :nth-child(3) {
+  animation-delay: 20s;
+}
 .menu .menuborder {
   display: block;
   background-color: #99E2D0;
@@ -336,6 +471,7 @@ footer a {
   justify-content: space-between;
   margin: 3%;
   border-radius: 20px;
+  animation: apparition 0.4s;
   box-shadow: 0px 5px 14px #bbb9b9;
   transform: rotate(0deg);
   transition: width 3s;
@@ -346,6 +482,7 @@ footer a {
   width: 18%;
 }
 .menuitem:hover .menuitem__validation .menuitem__icon {
+  font-size: 10px;
   transform: rotate(5deg);
   color: #99E2D0;
   transition: rotate 500ms, color 10s;
@@ -389,6 +526,8 @@ footer a {
   white-space: nowrap;
 }
 .menuitem .menuitem__price {
+  position: relative;
+  right: 0px;
   padding-top: 40px;
 }
 .menuitem .menuitem__validation {

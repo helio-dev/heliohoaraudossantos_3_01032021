@@ -7,7 +7,113 @@ $primaire:#9356DC;
 $secondaire: #FF79DA;
 $tertiaire: #99E2D0;
 $quaternaire: #eaeaea;
+.fa-heart::after{
+	content: "\f004";
+}
 
+@keyframes apparition {
+	0%{
+		transform: scale(0);
+	}
+	100%{
+		transform: scale(1);
+	}
+}
+.far{
+	font-size: x-large;
+	color: black;
+	background-color: white;
+}
+
+/*loader */
+.lds-roller {
+	display: inline-block;
+	position: relative;
+	width: 80px;
+	height: 80px;
+  }
+  .lds-roller div {
+	animation: lds-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+	transform-origin: 40px 40px;
+  }
+  .lds-roller div:after {
+	content: " ";
+	display: block;
+	position: absolute;
+	width: 7px;
+	height: 7px;
+	border-radius: 50%;
+	margin: -4px 0 0 -4px;
+  }
+  .lds-roller div:nth-child(1) {
+	animation-delay: -0.036s;
+	
+  }
+  .lds-roller div:nth-child(1):after {
+	top: 63px;
+	left: 63px;
+	background: $primaire
+  }
+  .lds-roller div:nth-child(2) {
+	animation-delay: -0.072s;
+  }
+  .lds-roller div:nth-child(2):after {
+	top: 68px;
+	left: 56px;
+	background: $tertiaire;
+  }
+  .lds-roller div:nth-child(3) {
+	animation-delay: -0.108s;
+  }
+  .lds-roller div:nth-child(3):after {
+	top: 71px;
+	left: 48px;
+	background: $secondaire
+  }
+  .lds-roller div:nth-child(4) {
+	animation-delay: -0.144s;
+  }
+  .lds-roller div:nth-child(4):after {
+	top: 72px;
+	left: 40px;
+  }
+  .lds-roller div:nth-child(5) {
+	animation-delay: -0.18s;
+  }
+  .lds-roller div:nth-child(5):after {
+	top: 71px;
+	left: 32px;
+  }
+  .lds-roller div:nth-child(6) {
+	animation-delay: -0.216s;
+  }
+  .lds-roller div:nth-child(6):after {
+	top: 68px;
+	left: 24px;
+  }
+  .lds-roller div:nth-child(7) {
+	animation-delay: -0.252s;
+  }
+  .lds-roller div:nth-child(7):after {
+	top: 63px;
+	left: 17px;
+  }
+  .lds-roller div:nth-child(8) {
+	animation-delay: -0.288s;
+  }
+  .lds-roller div:nth-child(8):after {
+	top: 56px;
+	left: 12px;
+  }
+  @keyframes lds-roller {
+	0% {
+	  transform: rotate(0deg);
+	}
+	100% {
+	  transform: rotate(360deg);
+	}
+  }
+/* loader */
 
 /*Fonts*/
 $titre:'Shrikhand', cursive;
@@ -25,6 +131,10 @@ $texte:'Roboto', sans-serif;
 		padding: 19px 0px 8px;
 		.logo__hello{
 			width: 170px;
+		}
+		.fa-arrow-left{
+			color: black;
+			font-size: large;
 		}
 	}
 /*HEADER */
@@ -55,10 +165,11 @@ $texte:'Roboto', sans-serif;
 		}/*info button */
     .info{			
 		.info__form{
+			background-color: #eaeaea;
 			color: #353535;
 			margin-bottom: 0px;
 			margin: auto;
-			width: 30%;
+			width: 100%;
 			display: flex;
 			align-items: center;
 			justify-content: center;
@@ -79,16 +190,15 @@ $texte:'Roboto', sans-serif;
 			padding-right:20px;
 			padding-bottom: 20px;
 			padding-left: 20px;
-			box-shadow: -3px -1px 13px 12px #f3f3f3F3;
 			.info__title{
 				font-family: $texte;
-				font-size: medium;
+				font-size: x-large;
 				margin: 17px 30px 15px 30px;
 			}
     		.info__description{
 			color: #959595;	
 			font-family: $texte;	
-			font-size: medium;
+			font-size: large;
 			}
 			
 		} /*info cta */
@@ -104,11 +214,10 @@ $texte:'Roboto', sans-serif;
 		padding-left: 25px;
 	}
 	.cta{
-		display: inline-flex;
+		display: block;
 		width: 100%;
 	}
 	.ctaitem{
-		width: 35%;
 		margin-bottom: 28px;	
 		display: flex;
 		align-items: center;
@@ -165,7 +274,7 @@ $texte:'Roboto', sans-serif;
 		padding: 10px;
 	}
 	.restaurantslist__contenair{
-		display: grid;
+		display: block;
 		grid-template-columns: 1fr 1fr;
 	}
 	.listtitle{
@@ -242,6 +351,9 @@ $texte:'Roboto', sans-serif;
 			display: flex;
 			justify-content: center;
 			align-items: center;
+		}
+		.prout{
+			background-color: white;
 		}
 		.fa-heart{		
 			color: black;
@@ -323,6 +435,7 @@ $texte:'Roboto', sans-serif;
 						
 					}
 					:nth-child(3){
+						animation-delay: 20s;
 						
 					}
 			}
@@ -344,19 +457,24 @@ $texte:'Roboto', sans-serif;
 		font-family: $texte;
 		color: #7b7b7b;
 	}
+
 	.menuitem{
 		background-color: white;
 		display: flex;
 		justify-content: space-between;
 		margin: 3%;
 		border-radius: 20px;
+		animation: apparition 0.4s;
 		box-shadow: 0px 5px 14px #bbb9b9;
 		transform: rotate(0deg);
 		transition: width 3s; rotate: 2s;
+		 
+		
 			&:hover .menuitem__validation{
 				background-color: $tertiaire;
 				width: 18%;
 					.menuitem__icon{
+						font-size: 10px;
 						transform: rotate(5deg);
 						color: $tertiaire;
 						transition: rotate 500ms, color 10s;
@@ -364,6 +482,7 @@ $texte:'Roboto', sans-serif;
     					-ms-transition: -ms-transform 500ms ease-in-out;
     					transition: transform 500ms ease-in-out;  
 					}
+					
 			}
 			.menuitem__icon{
 				font-size: 1px;
@@ -406,10 +525,13 @@ $texte:'Roboto', sans-serif;
 			}
 			
 			.menuitem__price{
+				position: relative;
+				right: 0px;
 				padding-top: 40px;
 			}
 			.menuitem__validation{
 				width: 0px;
+				
 				background-color: white;
 				border-radius: 0px 20px 20px 0px;
 				display:flex;
