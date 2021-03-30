@@ -1,0 +1,32 @@
+footer{
+    padding: 4% 0%;
+    font-family: $texte;
+    text-decoration: none;
+    font-size: medium;
+    background-color: #353535;
+    color: white;
+    .omf__title{
+        font-family: $titre;
+        color: white;
+        font-size: medium;
+        font-weight: normal;
+    }
+    .logo__bye{
+        width: 40%;
+        color: white;
+    }
+    .bye__info{
+        list-style: none;
+        li{
+            margin-bottom: 8px;
+        }
+        .fas{
+            font-size: small;
+            width: 21px;
+        }
+    }
+    a{
+        color: white;
+        text-decoration: none;
+    }
+}/*footer */
