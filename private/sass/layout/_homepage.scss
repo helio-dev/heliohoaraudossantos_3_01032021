@@ -12,6 +12,28 @@
 		transform: scale(1);
 	}
 }
+@keyframes apparitionmain{
+    0%{
+        opacity: 0%;
+    }
+    80%{
+        opacity: 0%;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+@keyframes disparitionloader{
+    0%{
+        opacity: 100% ;
+    }
+    90%{
+        opacity: 100% ;
+    }
+    to{
+        opacity: 0%;
+    }
+}
 .far{
 	font-size: x-large;
 	color: black;
@@ -19,10 +41,20 @@
 }
 
 /*loader */
+.loader{
+animation: disparitionloader 3s;
+animation-duration: 3s;
+animation-delay: 0.2ms;
+opacity: 0%;
+display: flex;
+justify-content: center;
+width: 100%;
+position: absolute;
+top: 5rem;
+}
 .lds-roller {
 	display: inline-block;
-	position: relative;
-	width: 80px;
+	width: 30%;
 	height: 80px;
   }
   .lds-roller div {
@@ -107,7 +139,11 @@
 	}
   }
 /* loader */
-
+main{
+    opacity: 100%;
+    animation: apparitionmain 3s;
+    animation-duration: 5s;
+}
 
 
 /* DEKSTOP to line 411 */ 
