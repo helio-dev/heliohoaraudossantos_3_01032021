@@ -1,10 +1,5 @@
-@charset "UTF-8";
 /*Couleurs*/
 /*Fonts*/
-.fa-heart::after {
-  content: "";
-}
-
 @keyframes apparition {
   0% {
     transform: scale(0);
