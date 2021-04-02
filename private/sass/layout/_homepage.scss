@@ -1,5 +1,5 @@
 @use '../abstract/fontsandcolors';
-
+@use '../layout/header';
 
 
 @keyframes apparition {
@@ -151,23 +151,7 @@ main{
 		font-family: fontsandcolors.$texte;
     }
 /* HEADER */
-	.banniere{
-		text-align: center;
-		
-		.logo__hello{
-			width: 170px;
-		}
-		.fa-arrow-left{
-            display: flex;
-            position: absolute;
-            height: 5rem;
-            top: Opx;
-            left: 2rem;
-            align-items: center;
-			color: black;
-			font-size: large;
-		}
-	}
+	
 /*HEADER */
 
 /*SECTION */
@@ -385,11 +369,16 @@ main{
 						-webkit-background-clip: text;
 						-moz-background-clip: text;
 						background-clip: text;
+						opacity: 100;
 						-webkit-text-fill-color: transparent;
+						
 					}
 				}
 		}
 		.coeurplein{
+			opacity: 0;
+			background: white;
+			transition: opacity 1s;
 			display: none;
 			font-size: x-large;
 		}

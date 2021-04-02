@@ -1,5 +1,27 @@
 /*Couleurs*/
 /*Fonts*/
+.banniere {
+  text-align: center;
+}
+.banniere .menumaintitle {
+  font-family: "Shrikhand", cursive;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0.5em 0em 0.2em 0em;
+}
+
+.fa-arrow-left {
+  display: flex;
+  position: absolute;
+  height: 5rem;
+  top: Opx;
+  left: 2rem;
+  align-items: center;
+  color: black;
+  font-size: large;
+}
+
 @keyframes apparition {
   0% {
     transform: scale(0);
@@ -168,23 +190,6 @@ body {
 }
 
 /* HEADER */
-.banniere {
-  text-align: center;
-}
-.banniere .logo__hello {
-  width: 170px;
-}
-.banniere .fa-arrow-left {
-  display: flex;
-  position: absolute;
-  height: 5rem;
-  top: Opx;
-  left: 2rem;
-  align-items: center;
-  color: black;
-  font-size: large;
-}
-
 /*HEADER */
 /*SECTION */
 /*BLOCCTA */
@@ -397,9 +402,13 @@ body {
   -webkit-background-clip: text;
   -moz-background-clip: text;
   background-clip: text;
+  opacity: 100;
   -webkit-text-fill-color: transparent;
 }
 .restaurant .coeurplein {
+  opacity: 0;
+  background: white;
+  transition: opacity 1s;
   display: none;
   font-size: x-large;
 }
@@ -875,15 +884,6 @@ footer a {
 /* MENU.HTML */
 .cover {
   width: 100%;
-}
-
-.menumaintitle {
-  font-family: "Shrikhand", cursive;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0px;
-  height: 5rem;
 }
 
 .menu__button {
