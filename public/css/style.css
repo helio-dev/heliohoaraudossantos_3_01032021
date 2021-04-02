@@ -340,30 +340,6 @@ body {
   background-color: white;
   margin-bottom: 20px;
 }
-.restaurant :nth-child(1) {
-  grid-row-start: 1;
-  grid-row-end: 2;
-  grid-column-start: 1;
-  grid-column-end: 2;
-}
-.restaurant :nth-child(2) {
-  grid-row-start: 1;
-  grid-row-end: 2;
-  grid-column-start: 2;
-  grid-column-end: 3;
-}
-.restaurant :nth-child(3) {
-  grid-row-start: 2;
-  grid-row-end: 3;
-  grid-column-start: 1;
-  grid-column-end: 2;
-}
-.restaurant :nth-child(4) {
-  grid-row-start: 2;
-  grid-row-end: 3;
-  grid-column-start: 2;
-  grid-column-end: 3;
-}
 .restaurant .restaurant__image {
   object-fit: cover;
   width: 100%;
@@ -371,17 +347,25 @@ body {
   border-radius: 12px 12px 0px 0px;
 }
 .restaurant .restaurant__description {
+  display: flex;
+  justify-content: space-between;
   padding: 10px;
   font-family: "Roboto", sans-serif;
   border-radius: 0px 0px 12px 12px;
 }
+.restaurant .restaurant__description .restaurant__desciption__text {
+  flex: 1;
+}
 .restaurant .restaurant__description .restaurant__title {
+  font-size: large;
   margin: 0px;
   color: black;
   font-weight: bold;
   white-space: nowrap;
+  margin-bottom: 3px;
 }
 .restaurant .restaurant__description .restaurant__location {
+  font-size: large;
   color: grey;
   margin: 0px;
 }
@@ -395,11 +379,33 @@ body {
   margin-inline-start: 53%;
   background-color: #99e2d0;
 }
-.restaurant .fa-heart-container {
-  width: 10px;
+.restaurant .heartcontainer {
+  width: 20%;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.restaurant .heartcontainer:hover .coeurvide {
+  display: none;
+}
+.restaurant .heartcontainer:hover .coeurplein {
+  display: block;
+  font-size: x-large;
+  background: -moz-linear-gradient(top, #e72c83 0%, #a742c6 100%);
+  background: -webkit-linear-gradient(top, #e72c83 0%, #a742c6 100%);
+  background: linear-gradient(to bottom, #e72c83 0%, #a742c6 100%);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.restaurant .coeurplein {
+  display: none;
+  font-size: x-large;
+}
+.restaurant .coeurvide {
+  font-size: x-large;
+  font-weight: lighter;
 }
 .restaurant .prout {
   background-color: white;
