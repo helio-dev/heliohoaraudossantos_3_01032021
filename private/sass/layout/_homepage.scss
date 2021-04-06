@@ -291,7 +291,7 @@ main{
 	}
 	.restaurantslist__contenair{
 		display: block;
-		grid-template-columns: 1fr 1fr;
+		
 	}
 	.listtitle{
 		@extend .title;
@@ -451,8 +451,15 @@ main{
 		}
 	}/*footer */
 	
-	
-	
+	/*Desktop*/
+	@media (min-width: 1281px) {
+
+		.restaurantslist__contenair{
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+		}
+
+	}
 	/* MENU.HTML */
 
 
