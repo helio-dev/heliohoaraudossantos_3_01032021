@@ -1,0 +1,30 @@
+@use "../abstract/fontsandcolors";
+.banniere{
+    text-align: center;
+    .restaurantcontainer{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    .menumaintitle{
+        font-family: fontsandcolors.$titre;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0.5em 0em 0.2em 0em;   
+    }
+
+
+
+    
+}
+.fa-arrow-left{
+    display: flex;
+    position: absolute;
+    top: Opx;
+    left: 2rem;
+    align-items: center;
+    color: black;
+    font-size: large;
+}
