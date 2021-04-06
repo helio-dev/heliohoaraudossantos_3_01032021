@@ -3,6 +3,12 @@
 .banniere {
   text-align: center;
 }
+.banniere .restaurantcontainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
 .banniere .menumaintitle {
   font-family: "Shrikhand", cursive;
   display: flex;
@@ -14,7 +20,6 @@
 .fa-arrow-left {
   display: flex;
   position: absolute;
-  height: 5rem;
   top: Opx;
   left: 2rem;
   align-items: center;
@@ -385,42 +390,48 @@ body {
   background-color: #99e2d0;
 }
 .restaurant .heartcontainer {
-  width: 20%;
+  width: 10px;
+  margin-right: 1em;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .restaurant .heartcontainer:hover .coeurvide {
-  display: none;
+  opacity: 0;
 }
 .restaurant .heartcontainer:hover .coeurplein {
-  display: block;
-  font-size: x-large;
+  opacity: 100;
+  background-position: 0 0;
+}
+.restaurant .coeurplein {
+  position: absolute;
   background: -moz-linear-gradient(top, #e72c83 0%, #a742c6 100%);
   background: -webkit-linear-gradient(top, #e72c83 0%, #a742c6 100%);
   background: linear-gradient(to bottom, #e72c83 0%, #a742c6 100%);
   -webkit-background-clip: text;
   -moz-background-clip: text;
   background-clip: text;
-  opacity: 100;
   -webkit-text-fill-color: transparent;
-}
-.restaurant .coeurplein {
   opacity: 0;
-  background: white;
-  transition: opacity 1s;
-  display: none;
+  display: block;
   font-size: x-large;
+  background-position: 0 -30px;
+  -webkit-transition: all 0.6s linear;
+  -moz-transition: all 0.6s linear;
+  -o-transition: all 0.6s linear;
+  transition: all 0.6s linear;
 }
 .restaurant .coeurvide {
+  position: absolute;
   font-size: x-large;
   font-weight: lighter;
+  -webkit-transition: all 0.6s linear;
+  -moz-transition: all 0.6s linear;
+  -o-transition: all 0.6s linear;
+  transition: all 0.6s linear;
 }
 .restaurant .prout {
   background-color: white;
-}
-.restaurant .fa-heart {
-  color: black;
 }
 .restaurant .fa-heart:active {
   font-size: larger;
