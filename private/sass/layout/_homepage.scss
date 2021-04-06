@@ -139,8 +139,9 @@ top: 5rem;
 /* loader */
 main{
     opacity: 100%;
-    animation: apparitionmain 3s;
-    animation-duration: 5s;
+    animation: apparitionmain 1s;
+    animation-duration: 1s;
+	/*passer a 3 et 5s pour le loader */
 }
 
 
@@ -356,7 +357,7 @@ main{
 			display: flex;
 			justify-content: center;
 			align-items: center;
-				&:hover{
+				&:active{
 					.coeurvide{
 						opacity: 0;						
 					}

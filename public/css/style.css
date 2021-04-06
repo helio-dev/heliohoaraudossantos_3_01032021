@@ -183,8 +183,9 @@
 /* loader */
 main {
   opacity: 100%;
-  animation: apparitionmain 3s;
-  animation-duration: 5s;
+  animation: apparitionmain 1s;
+  animation-duration: 1s;
+  /*passer a 3 et 5s pour le loader */
 }
 
 /* DEKSTOP to line 411 */
@@ -396,10 +397,10 @@ body {
   justify-content: center;
   align-items: center;
 }
-.restaurant .heartcontainer:hover .coeurvide {
+.restaurant .heartcontainer:active .coeurvide {
   opacity: 0;
 }
-.restaurant .heartcontainer:hover .coeurplein {
+.restaurant .heartcontainer:active .coeurplein {
   opacity: 100;
   background-position: 0 0;
 }
@@ -954,40 +955,16 @@ footer a {
   color: #7b7b7b;
 }
 
-.delay0 {
-  animation: delay 0s;
+.entrees .menuitem {
+  animation: apparition 0.4s;
 }
 
-.delay1 {
-  animation-delay: 0.2s;
+.plats .menuitem {
+  animation: apparition 0.8s;
 }
 
-.delay2 {
-  animation-delay: 0.4s;
-}
-
-.delay3 {
-  animation-delay: 0.6s;
-}
-
-.delay4 {
-  animation-delay: 0.8s;
-}
-
-.delay5 {
-  animation-delay: 1s;
-}
-
-.delay6 {
-  animation-delay: 1.2;
-}
-
-.delay7 {
-  animation-delay: 1.3;
-}
-
-.delay8 {
-  animation-delay: 1.4s;
+.desserts .menuitem {
+  animation: apparition 1.2s;
 }
 
 .menuitem {
@@ -996,11 +973,7 @@ footer a {
   justify-content: space-between;
   margin: 3%;
   border-radius: 20px;
-  animation: apparition 0.4s;
   box-shadow: 0px 5px 14px #bbb9b9;
-  transform: rotate(0deg);
-  transition: width 3s;
-  rotate: 2s;
 }
 .menuitem:hover .menuitem__validation {
   background-color: #99E2D0;
