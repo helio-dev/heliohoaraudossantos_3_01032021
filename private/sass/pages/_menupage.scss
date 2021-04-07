@@ -1,0 +1,199 @@
+@use '../abstract/fontsandcolors';
+@use '../pages/homepage';
+@use '../layout/header';
+
+/* MENU.HTML */
+.cover{
+    width: 100%;
+}
+
+.menu__button{
+    /* 
+    @extend .info__button;
+    Error: The target selector was not found.
+    Use "@extend .info__button !optional" to avoid this error.
+   
+     @extend .info__button;
+       ^^^^^^^^^^^^^^^^^^^^^
+    */
+    margin: 12px 0px 34px 0px;
+		font-size: large;
+		
+		font-family: fontsandcolors.$texte;
+		background:linear-gradient(174deg,fontsandcolors.$secondaire, fontsandcolors.$primaire);
+		height: 3em;
+		color: #FFF;
+		border-radius: 40px;
+		box-shadow: 2px 3px 4px 1px #bfb8b8;
+		border: none;
+		transition: opacity 0.4s; box-shadow: 1s;
+    padding: 0% 16% 0% 15%;
+    margin: 9% 0% 22% 17%;
+}
+.submenu{
+    display: block;
+}
+.menu{
+    background-color: #f6f6f6;
+    margin-top: -15%;
+    border-radius: 25px 25px 0px 0px;
+    position: relative;
+    padding: 3%;
+        .menu__categorie{
+            font-family: fontsandcolors.$texte;
+            font-size: medium;
+            font-weight: 100;
+            color: #353535;
+            margin-bottom: 5px;
+            width: 100%;
+            }
+        .menuborder{
+            display: block;
+            background-color: fontsandcolors.$tertiaire;
+            width: 40px;
+            height: 3px;
+        }
+}
+.menu__title{
+    font-family: fontsandcolors.$titre;
+    font-weight: 100;
+}
+
+.menu__main{
+    margin: 39px 0px 4px 0px;
+    font-size: medium;
+    font-family: fontsandcolors.$texte;
+    color: #7b7b7b;
+}
+.entrees{
+    .menuitem{
+        animation: apparition 0.4s;
+    }
+   
+    
+}
+.plats{
+    .menuitem{
+        animation: apparition 0.8s;
+    }
+   
+}
+.desserts{
+    .menuitem{
+        animation: apparition 1.2s;
+    }
+   
+}
+
+.menuitem{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    margin: 3%;
+    border-radius: 20px; 
+    box-shadow: 0px 5px 14px #bbb9b9;
+       
+        &:hover .menuitem__validation{
+            background-color: fontsandcolors.$tertiaire;
+            width: 18%;
+                .menuitem__icon{
+                    font-size: 10px;
+                    transform: rotate(5deg);
+                    color: fontsandcolors.$tertiaire;
+                    transition: rotate 500ms, color 10s;
+                    -webkit-transition: -webkit-transform 500ms ease-in-out;
+                    -ms-transition: -ms-transform 500ms ease-in-out;
+                    transition: transform 500ms ease-in-out;  
+                }
+                
+        }
+        .menuitem__icon{
+            font-size: 1px;
+            color: fontsandcolors.$tertiaire;
+            transform: rotate(80deg);
+        }
+        
+        .menuitem__wrapicon{
+            height: 1.6rem;
+            
+            width: 1.6rem;
+            background-color: white;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            border-radius: 100px;
+
+        }
+        .menuitem__header{
+            width: 80%;
+            padding: 13px 0px 10px 12px;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+
+        }
+        .menuitem__title{
+            margin-top: 0px;
+            font-weight: 600;
+            margin-bottom: 7px;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+        .menuitem__info{
+            display: inline;
+            color: #353535;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+        
+        .menuitem__price{
+            position: relative;
+            right: 0px;
+            padding-top: 40px;
+        }
+        .menuitem__validation{
+            width: 0px;
+            
+            background-color: white;
+            border-radius: 0px 20px 20px 0px;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            transition-duration: 0.6s;
+           
+            .plat__validation{
+                margin: -1rem -5rem -1rem 1rem;
+                display: block;
+                background-color: #99e2d0;
+                align-items: center;
+                justify-content: center;
+                transition-duration: .4s;
+            }
+            
+        }
+        
+    
+        
+
+        
+    }
+    @media (min-width: 1281px) 
+    {
+        .submenu{
+            display: flex;
+            .menu__categorie{
+                width: 33%;
+            }
+        }
+    }
+
+
+        
+
+    
+    
+    
+    
+
