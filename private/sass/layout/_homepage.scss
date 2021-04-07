@@ -42,6 +42,7 @@
 .loader{
 animation: disparitionloader 3s;
 animation-duration: 3s;
+animation-fill-mode: both;
 animation-delay: 0.2ms;
 opacity: 0%;
 display: flex;
@@ -357,7 +358,7 @@ main{
 			display: flex;
 			justify-content: center;
 			align-items: center;
-				&:active{
+				&:hover{
 					.coeurvide{
 						opacity: 0;						
 					}
@@ -419,6 +420,7 @@ main{
 
 /*FOOTER */
 	footer{
+		display: block;
 		padding: 4% 0%;
 		font-family: fontsandcolors.$texte;
 		text-decoration: none;
@@ -457,6 +459,17 @@ main{
 		.restaurantslist__contenair{
 			display: grid;
 			grid-template-columns: 1fr 1fr;
+		}
+
+		.cta{
+			display: flex;
+			.ctaitem{
+				width: 33%;
+			}
+		}
+		footer{
+			display: flex;
+			justify-content: center;
 		}
 
 	}

@@ -67,6 +67,7 @@
 .loader {
   animation: disparitionloader 3s;
   animation-duration: 3s;
+  animation-fill-mode: both;
   animation-delay: 0.2ms;
   opacity: 0%;
   display: flex;
@@ -396,10 +397,10 @@ body {
   justify-content: center;
   align-items: center;
 }
-.restaurant .heartcontainer:active .coeurvide {
+.restaurant .heartcontainer:hover .coeurvide {
   opacity: 0;
 }
-.restaurant .heartcontainer:active .coeurplein {
+.restaurant .heartcontainer:hover .coeurplein {
   opacity: 100;
   background-position: 0 0;
 }
@@ -448,6 +449,7 @@ body {
 /* FIN DE LA SECTION RESTAURANTS LIST */
 /*FOOTER */
 footer {
+  display: block;
   padding: 4% 0%;
   font-family: "Roboto", sans-serif;
   text-decoration: none;
@@ -486,6 +488,18 @@ footer a {
   .restaurantslist__contenair {
     display: grid;
     grid-template-columns: 1fr 1fr;
+  }
+
+  .cta {
+    display: flex;
+  }
+  .cta .ctaitem {
+    width: 33%;
+  }
+
+  footer {
+    display: flex;
+    justify-content: center;
   }
 }
 /* MENU.HTML */
@@ -1043,10 +1057,6 @@ footer a {
   align-items: center;
   justify-content: center;
   transition-duration: 0.6s;
-}
-.menuitem .menuitem__validation:hover {
-  background-color: #99E2D0;
-  width: 40px;
 }
 .menuitem .menuitem__validation .plat__validation {
   margin: -1rem -5rem -1rem 1rem;
