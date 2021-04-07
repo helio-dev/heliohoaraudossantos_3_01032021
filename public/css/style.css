@@ -81,6 +81,8 @@
   display: inline-block;
   width: 30%;
   height: 80px;
+  margin: auto;
+  position: absolute;
 }
 
 .lds-roller div {
@@ -184,8 +186,8 @@
 /* loader */
 main {
   opacity: 100%;
-  animation: apparitionmain 1s;
-  animation-duration: 1s;
+  animation: apparitionmain 3s;
+  animation-duration: 5s;
   /*passer a 3 et 5s pour le loader */
 }
 
@@ -486,6 +488,10 @@ footer a {
 /*footer */
 /*Desktop*/
 @media (min-width: 1281px) {
+  .submenu {
+    display: flex;
+  }
+
   .restaurantslist__contenair {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -943,6 +949,10 @@ footer a {
   margin: 9% 0% 22% 17%;
 }
 
+.submenu {
+  display: block;
+}
+
 .menu {
   background-color: #f6f6f6;
   margin-top: -15%;
@@ -956,6 +966,7 @@ footer a {
   font-weight: 100;
   color: #353535;
   margin-bottom: 5px;
+  width: 100%;
 }
 .menu .menuborder {
   display: block;
@@ -1068,6 +1079,14 @@ footer a {
   transition-duration: 0.4s;
 }
 
+@media (min-width: 1281px) {
+  .submenu {
+    display: flex;
+  }
+  .submenu .menu__categorie {
+    width: 33%;
+  }
+}
 /*12mars 8h50--10h
 10h25 11h25 figcaption nouveau a terminer avant de commit */
 /*7h30 9h */
