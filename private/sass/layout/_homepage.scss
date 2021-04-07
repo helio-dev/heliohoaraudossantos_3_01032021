@@ -159,6 +159,23 @@ main{
 /*SECTION */
 /*BLOCCTA */
 	/*ARTICLE INFO */
+	.heartcontainer{
+		width: 10px;
+		margin-right: 1em;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+			&:hover{
+				.coeurvide{
+					opacity: 0;						
+				}
+				.coeurplein{
+					opacity: 100;
+					background-position: 0 0;
+					
+				}
+			}
+	}
 	.info__button {
 		margin: 12px 0px 34px 0px;
 		font-size: large;
@@ -307,6 +324,17 @@ main{
 		border-radius: 20px;
 		background-color: white;
 		margin-bottom: 20px;
+		.restaurant__info{
+				display: block;
+				padding: 2% 4% 2% 4%;
+				position: absolute;
+				color: #008766;
+				z-index: 1;
+    			margin-block-start: -59%;
+    			margin-inline-start: 53%;
+				background-color: #99e2d0;
+				
+			}
 		
 		.restaurant__image{
 			object-fit: cover;
@@ -340,35 +368,9 @@ main{
 				color: grey;
 				margin: 0px;
 			}
-			.restaurant__info{
-				display: none;
-				padding: 2% 4% 2% 4%;
-				position: absolute;
-				color: #008766;
-				z-index: 1;
-    			margin-block-start: -59%;
-    			margin-inline-start: 53%;
-				background-color: #99e2d0;
-				
-			}
+			
 		}
-		.heartcontainer{
-			width: 10px;
-			margin-right: 1em;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-				&:hover{
-					.coeurvide{
-						opacity: 0;						
-					}
-					.coeurplein{
-						opacity: 100;
-						background-position: 0 0;
-						
-					}
-				}
-		}
+		
 		.coeurplein{
 			position: absolute;
 			background: -moz-linear-gradient(top, #e72c83 0%, #a742c6 100%);

@@ -4,7 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>La oalette du gout</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="fontawesome-free-5.15.2-web/css/brands.css"> 
+    <link rel="stylesheet" href="fontawesome-free-5.15.2-web/css/solid.css"> 
+    <link rel="stylesheet" href="fontawesome-free-5.15.2-web/css/fontawesome.css">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,700;1,500&family=Shrikhand&display=swap" rel="stylesheet">
@@ -12,65 +16,154 @@
 <body>
     <div>
         <header class="banniere">
-            <img class="logo__hello" src="img/images/logo/ohmyfood.png" alt="logo ohmyfood">
+            <div class="restaurantcontainer">
+                
+                <a href="./index.html"><i class="fas fa-arrow-left"></i></a>
+                <h2 class="menumaintitle">ohmyfood</h2>
+            </div>    
         </header>
 
-        <img class="cover" src="img/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="">
+        <img class="cover" src="img/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="restaurant La Palette du gout">
     </div>
     
 
     <article class="menu">
+        <h1 class="menu__title">La palette du goût</h1>
 
-    
-        <h1 class="menu__title">A la française</h1>
-        <h2 class="menu__categorie">ENTREES</h2>
+        
+        <section class="menu__categorie entrees">
+            <h2 class="menu__main">ENTREES</h2>
+            <span class="menuborder"></span>
 
-        <div class="plat">
-            <p class="plat__title">Tartare de poulpe acidulé</p>
-            <p class="plat__info">Aux zestes d'orange</p><span class="plat__price">25€</span>
-        </div>
+            <article class="menuitem">
+                <header class="menuitem__header">
+                    <h3 class="menuitem__title">Fricassée d'escargot</h3>
+                    <p class="menuitem__info">Au piment d'espelette</p>
+                </header>
+                <div class="menuitem__price">25€</div>
+                <div class="menuitem__validation">
+                    <div class="menuitem__wrapicon">
+                        <i class="menuitem__icon fas fa-check"></i>
+                    </div>
+                </div>
+            </article>
+            <article class="menuitem">
+                <header class="menuitem__header">
+                    <h3 class="menuitem__title">Foie gras de canard mi-cuit</h3>
+                    <p class="menuitem__info">Et ses copeaux de truffe noire</p>      
+                </header>
+                <div class="menuitem__price">35€</div>
+                <div class="menuitem__validation">
+                    <div class="menuitem__wrapicon">
+                        <i class="menuitem__icon fas fa-check"></i>
+                    </div>
+                </div>    
+            </article>
 
-        <div class="plat">
-            <p class="plat__title">Velouté de légumes d'antan</p>
-            <p class="plat__info">Carotte, panais, topinambour</p><span class="plat__price">35€</span>
-        </div>
+            <article class="menuitem">
+                <header class="menuitem__header">
+                    <h3 class="menuitem__title">Oeuf au plat</h3>
+                    <p class="menuitem__info">Assaisonné à la truffe sur lit de caviar</p>
+                </header>
+                <div class="menuitem__price">20€</div>
+                <div class="menuitem__validation">         
+                    <div class="menuitem__wrapicon">
+                        <i class="menuitem__icon fas fa-check"></i>
+                    </div>
+                </div>
+            </article>
+        </section>
 
-        <div class="plat">
-            <p class="plat__title">Soupe à l'oignon</p>
-            <p class="plat__info">Revisitée</p><span class="plat__price">20€</span>
-        </div>
-        <h2 class="menu__categorie">PLATS</h2>
-        <div class="plat">
-            <p class="plat__title">Coquilles Saint-Jacques</p>
-            <p class="plat__info">Accompagnées d'une purée de panais</p><span class="plat__price">40€</span>
-        </div>
+        <section class="menu__categorie plats">
+            <h2 class="menu__main">PLATS</h2>
+            <span class="menuborder"></span>
+            
+            <article class="menuitem">
+                <header class="menuitem__header">
+                    <h3 class="menuitem__title">Filet de boeuf aux herbes</h3>
+                    <p class="menuitem__info">Accompagné de sa ribambelle de légumes</p>               
+                </header>
+                <div class="menuitem__price">40€</div>
+                <div class="menuitem__validation">
+                    <div class="menuitem__wrapicon">
+                        <i class="menuitem__icon fas fa-check"></i>
+                    </div>
+                </div>
+            </article>
 
-        <div class="plat">
-            <p class="plat__title">Magret de canard</p>
-            <p class="plat__info">Et parmentier de pommes de terre</p><span class="plat__price">35€</span>
-        </div>
+            <article class="menuitem">
+                <header class="menuitem__header">
+                    <h3 class="menuitem__title">Parmentier de queue de boeuf</h3>
+                    <p class="menuitem__info">À la truffe noire sur sa purée de panais</p>  
+                </header>
+                <div class="menuitem__price">35€</div>
+                <div class="menuitem__validation">
+                    <div class="menuitem__wrapicon">
+                        <i class="menuitem__icon fas fa-check"></i>
+                    </div>
+                </div>
+            </article>
 
-        <div class="plat">
-            <p class="plat__title">Pigeonneau d’Ille-et-Vilaine</p>
-            <p class="plat__info">Sur son lit de gnocchis aux légumes</p><span class="plat__price">44€</span>
-        </div>
+            <article class="menuitem">
+                <header class="menuitem__header">
+                    <h3 class="menuitem__title">Filet de turbot</h3>
+                    <p class="menuitem__info">Aux agrumes</p>
+                </header>
+                <div class="menuitem__price">44€</div>
+                <div class="menuitem__validation">
+                    <div class="menuitem__wrapicon">
+                        <i class="menuitem__icon fas fa-check"></i>
+                    </div>  
+                </div>
+            </article>
+        </section>
 
-        <h2 class="menu__categorie">Desserts</h2>
+        <section class="menu__categorie desserts">
+            <h2 class="menu__main">DESSERTS</h2>
+            <span class="menuborder"></span>
+            
+            <article class="menuitem">
+                <header class="menuitem__header">
+                    <h3 class="menuitem__title">Paris-Brest</h3>
+                    <p class="menuitem__info">Revisité</p> 
+                </header>
+                <div class="menuitem__price">18€</div>
+                <div class="menuitem__validation">
+                    <div class="menuitem__wrapicon">
+                        <i class="menuitem__icon fas fa-check"></i>
+                    </div>
+                </div>
+            </article>
 
-        <div class="plat">
-            <p class="plat__title">Pétales de violettes glacés</p>
-            <p class="plat__info">Et purée de noisettes</p><span class="plat__price">18€</span>
-        </div>
+            <article class="menuitem">
+                <header class="menuitem__header">
+                    <h3 class="menuitem__title">Macaron au chocolat d'exception</h3>
+                    <p class="menuitem__info">Et glace à la vanille de Madagascar</p>   
+                </header>
+                <div class="menuitem__price">22€</div>
+                <div class="menuitem__validation">
+                    <div class="menuitem__wrapicon">
+                        <i class="menuitem__icon fas fa-check"></i>
+                    </div>
+                </div>
+            </article>    
 
-        <div class="plat">
-            <p class="plat__title">Fondant au chocolat</p>
-            <p class="plat__info">Revisité</p><span class="plat__price">22€</span>
-        </div>
-
-        <div class="plat">
-            <p class="plat__title">Millefeuille croustillant</p>
-            <p class="plat__info">Myrtilles et pâte d’amande</p><span class="plat__price">23€</span>
-        </div>
+            <article class="menuitem">
+                <header class="menuitem__header">
+                    <h3 class="menuitem__title">Mousse au chocolatt</h3>
+                    <p class="menuitem__info">Au piment d'Espelette et ç la truffe noire</p>
+                </header>
+                <div class="menuitem__price">23€</div>
+                
+                <div class="menuitem__validation">
+                    <div class="menuitem__wrapicon">
+                        <i class="menuitem__icon fas fa-check"></i>
+                    </div>
+                <div>
+                
+            </article>
+                        
+        </section>
 
         <button class="menu__button">Commander</button>
 
@@ -79,7 +172,27 @@
             
     </article>
     <footer>
-
+        
+        <ul class="bye__info">
+            <li>
+                <h1 class="omf__title">ohmyfood</h1>
+            </li>
+            <li>
+                <i class="fas fa-utensils"></i>
+                <a href="">Proposer un restaurant</a>
+            </li>
+            <li>
+                <i class="fas fa-hands-helping"></i>
+                <a href="">Devenir partenaire</a>
+            </li>
+            <li>
+                <a href="">Mentions légales</a>
+            </li>
+            <li>
+                <a href="">Contact</a>
+            </li>
+        </ul>
+       
     </footer>
 </body>
 </html>

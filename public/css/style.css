@@ -201,6 +201,21 @@ body {
 /*SECTION */
 /*BLOCCTA */
 /*ARTICLE INFO */
+.heartcontainer {
+  width: 10px;
+  margin-right: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.heartcontainer:hover .coeurvide {
+  opacity: 0;
+}
+.heartcontainer:hover .coeurplein {
+  opacity: 100;
+  background-position: 0 0;
+}
+
 .info__button {
   margin: 12px 0px 34px 0px;
   font-size: large;
@@ -351,6 +366,16 @@ body {
   background-color: white;
   margin-bottom: 20px;
 }
+.restaurant .restaurant__info {
+  display: block;
+  padding: 2% 4% 2% 4%;
+  position: absolute;
+  color: #008766;
+  z-index: 1;
+  margin-block-start: -59%;
+  margin-inline-start: 53%;
+  background-color: #99e2d0;
+}
 .restaurant .restaurant__image {
   object-fit: cover;
   width: 100%;
@@ -379,30 +404,6 @@ body {
   font-size: large;
   color: grey;
   margin: 0px;
-}
-.restaurant .restaurant__description .restaurant__info {
-  display: none;
-  padding: 2% 4% 2% 4%;
-  position: absolute;
-  color: #008766;
-  z-index: 1;
-  margin-block-start: -59%;
-  margin-inline-start: 53%;
-  background-color: #99e2d0;
-}
-.restaurant .heartcontainer {
-  width: 10px;
-  margin-right: 1em;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.restaurant .heartcontainer:hover .coeurvide {
-  opacity: 0;
-}
-.restaurant .heartcontainer:hover .coeurplein {
-  opacity: 100;
-  background-position: 0 0;
 }
 .restaurant .coeurplein {
   position: absolute;
