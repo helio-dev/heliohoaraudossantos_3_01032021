@@ -983,6 +983,7 @@ footer a {
 .menu__title {
   font-family: "Shrikhand", cursive;
   font-weight: 100;
+  color: red;
 }
 
 .menu__main {
