@@ -488,6 +488,10 @@ footer a {
 /*footer */
 /*Desktop*/
 @media (min-width: 1281px) {
+  .restaurant__info {
+    display: none;
+  }
+
   .submenu {
     display: flex;
   }
@@ -950,7 +954,6 @@ footer a {
   transition: opacity 0.4s;
   box-shadow: 1s;
   padding: 0% 16% 0% 15%;
-  margin: 9% 0% 22% 17%;
 }
 
 .submenu {
@@ -983,7 +986,6 @@ footer a {
 .menu__title {
   font-family: "Shrikhand", cursive;
   font-weight: 100;
-  color: red;
 }
 
 .menu__main {

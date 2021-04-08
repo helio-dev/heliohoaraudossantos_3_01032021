@@ -459,7 +459,9 @@ main{
 	
 	/*Desktop*/
 	@media (min-width: 1281px) {
-
+		.restaurant__info{
+			display: none;
+		}
 		.submenu{
 			display: flex;
 		}
