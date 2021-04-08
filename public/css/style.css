@@ -1085,6 +1085,11 @@ footer a {
 }
 
 @media (min-width: 1281px) {
+  .buttoncontainer {
+    display: flex;
+    justify-content: center;
+  }
+
   .menu__title {
     text-align: center;
   }
