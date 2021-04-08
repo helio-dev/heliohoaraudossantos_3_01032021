@@ -183,7 +183,7 @@
     {   
         .menu__title{
             text-align: center;
-            text-decoration: underline fontsandcolors.$tertiaire 2px;
+            
         }
         .menuborder{
             display: none;
@@ -191,6 +191,7 @@
         .menu__main{
             margin-left: 23px;
             text-align: center;
+            text-decoration: underline fontsandcolors.$tertiaire 2px;
         }
         .cover{
             max-height: 35rem;
