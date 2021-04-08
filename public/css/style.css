@@ -1080,6 +1080,25 @@ footer a {
 }
 
 @media (min-width: 1281px) {
+  .menu__title {
+    text-align: center;
+    text-decoration: underline #99E2D0 2px;
+  }
+
+  .menuborder {
+    display: none;
+  }
+
+  .menu__main {
+    margin-left: 23px;
+    text-align: center;
+  }
+
+  .cover {
+    max-height: 35rem;
+    object-fit: cover;
+  }
+
   .submenu {
     display: flex;
   }

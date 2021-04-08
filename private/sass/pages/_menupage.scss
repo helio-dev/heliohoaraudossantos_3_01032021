@@ -180,7 +180,22 @@
         
     }
     @media (min-width: 1281px) 
-    {
+    {   
+        .menu__title{
+            text-align: center;
+            text-decoration: underline fontsandcolors.$tertiaire 2px;
+        }
+        .menuborder{
+            display: none;
+        }
+        .menu__main{
+            margin-left: 23px;
+            text-align: center;
+        }
+        .cover{
+            max-height: 35rem;
+            object-fit: cover;
+        }
         .submenu{
             display: flex;
             .menu__categorie{
