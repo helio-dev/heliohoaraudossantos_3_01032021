@@ -925,6 +925,11 @@ footer a {
   width: 100%;
 }
 
+.buttoncontainer {
+  display: flex;
+  justify-content: center;
+}
+
 .menu__button {
   /* 
   @extend .info__button;
@@ -934,7 +939,6 @@ footer a {
    @extend .info__button;
      ^^^^^^^^^^^^^^^^^^^^^
   */
-  margin: 12px 0px 34px 0px;
   font-size: large;
   font-family: "Roboto", sans-serif;
   background: linear-gradient(174deg, #FF79DA, #9356DC);
@@ -973,6 +977,7 @@ footer a {
   background-color: #99E2D0;
   width: 40px;
   height: 3px;
+  opacity: 100;
 }
 
 .menu__title {
